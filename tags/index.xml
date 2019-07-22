@@ -39,20 +39,11 @@
     </item>
     
     <item>
-      <title>tag1</title>
-      <link>https://xn213.github.io/hugo-blog/tags/tag1/</link>
+      <title>hexo</title>
+      <link>https://xn213.github.io/hugo-blog/tags/hexo/</link>
       <pubDate>Sat, 20 Jul 2019 17:05:46 +0800</pubDate>
       
-      <guid>https://xn213.github.io/hugo-blog/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>https://xn213.github.io/hugo-blog/tags/tag2/</link>
-      <pubDate>Sat, 20 Jul 2019 17:05:46 +0800</pubDate>
-      
-      <guid>https://xn213.github.io/hugo-blog/tags/tag2/</guid>
+      <guid>https://xn213.github.io/hugo-blog/tags/hexo/</guid>
       <description></description>
     </item>
     
