@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag1 on xn213</title>
+    <link>https://xn213.github.io/hugo-blog/tags/tag1/</link>
+    <description>Recent content in tag1 on xn213</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jul 2019 17:05:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://xn213.github.io/hugo-blog/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hexo Create Blog</title>
+      <link>https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/</link>
+      <pubDate>Sat, 20 Jul 2019 17:05:46 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/</guid>
+      <description>使用 hexo 创建博客  基于 hexo + markdown 搭建个人博客. 容易上手搭建, 生态相对完善成熟, 问题解决方案全面
+这里介绍 / 安装 / 搭建 / 修改主题 / 部署到github
+ 1. 安装 nodejs / hexo # 淘宝镜像源 npm install -g --registry=https://registry.npm.taobao.org # 安装 hexo cnpm i hexo-cli -g # 验证 hexo hexo -v ## hexo: 3.9.0 ## hexo-cli: 2.0.0 ## node: 10.16.0  2. hexo命令创建项目  创建项目文件夹 cd 进入执行如下命令:
+# 初始化项目 hexo init # 默认克隆一个landscape 主题: themes/landscape; # 默认创建一篇文章: source/_posts/hello-world.</description>
+    </item>
+    
+  </channel>
+</rss>

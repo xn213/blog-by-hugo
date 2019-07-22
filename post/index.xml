@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on xn213</title>
+    <link>https://xn213.github.io/hugo-blog/post/</link>
+    <description>Recent content in Posts on xn213</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jul 2019 08:37:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://xn213.github.io/hugo-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>社会求助: 张天媛患白血病寻找亲生父母</title>
+      <link>https://xn213.github.io/hugo-blog/2019/07/%E7%A4%BE%E4%BC%9A%E6%B1%82%E5%8A%A9-%E5%BC%A0%E5%A4%A9%E5%AA%9B%E6%82%A3%E7%99%BD%E8%A1%80%E7%97%85%E5%AF%BB%E6%89%BE%E4%BA%B2%E7%94%9F%E7%88%B6%E6%AF%8D/</link>
+      <pubDate>Mon, 22 Jul 2019 08:37:10 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/07/%E7%A4%BE%E4%BC%9A%E6%B1%82%E5%8A%A9-%E5%BC%A0%E5%A4%A9%E5%AA%9B%E6%82%A3%E7%99%BD%E8%A1%80%E7%97%85%E5%AF%BB%E6%89%BE%E4%BA%B2%E7%94%9F%E7%88%B6%E6%AF%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo Create Blog</title>
+      <link>https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/</link>
+      <pubDate>Sat, 20 Jul 2019 17:23:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/</guid>
+      <description>使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
+ 一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&amp;frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
+ 配置环境变量: 系统&amp;gt;高级系统设置&amp;gt;环境变量&amp;gt;系统变量&amp;gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到PATH编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
+  二. 创建  命令: hugo new site &amp;lt;项目名&amp;gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.</description>
+    </item>
+    
+    <item>
+      <title>Hexo Create Blog</title>
+      <link>https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/</link>
+      <pubDate>Sat, 20 Jul 2019 17:05:46 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/</guid>
+      <description>使用 hexo 创建博客  基于 hexo + markdown 搭建个人博客. 容易上手搭建, 生态相对完善成熟, 问题解决方案全面
+这里介绍 / 安装 / 搭建 / 修改主题 / 部署到github
+ 1. 安装 nodejs / hexo # 淘宝镜像源 npm install -g --registry=https://registry.npm.taobao.org # 安装 hexo cnpm i hexo-cli -g # 验证 hexo hexo -v ## hexo: 3.9.0 ## hexo-cli: 2.0.0 ## node: 10.16.0  2. hexo命令创建项目  创建项目文件夹 cd 进入执行如下命令:
+# 初始化项目 hexo init # 默认克隆一个landscape 主题: themes/landscape; # 默认创建一篇文章: source/_posts/hello-world.</description>
+    </item>
+    
+  </channel>
+</rss>

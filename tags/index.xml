@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on xn213</title>
+    <link>https://xn213.github.io/hugo-blog/tags/</link>
+    <description>Recent content in Tags on xn213</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jul 2019 08:37:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://xn213.github.io/hugo-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>help</title>
+      <link>https://xn213.github.io/hugo-blog/tags/help/</link>
+      <pubDate>Mon, 22 Jul 2019 08:37:10 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/tags/help/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://xn213.github.io/hugo-blog/tags/hugo/</link>
+      <pubDate>Sat, 20 Jul 2019 17:23:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>博客工具</title>
+      <link>https://xn213.github.io/hugo-blog/tags/%E5%8D%9A%E5%AE%A2%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 20 Jul 2019 17:23:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/tags/%E5%8D%9A%E5%AE%A2%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag1</title>
+      <link>https://xn213.github.io/hugo-blog/tags/tag1/</link>
+      <pubDate>Sat, 20 Jul 2019 17:05:46 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/tags/tag1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag2</title>
+      <link>https://xn213.github.io/hugo-blog/tags/tag2/</link>
+      <pubDate>Sat, 20 Jul 2019 17:05:46 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/tags/tag2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
