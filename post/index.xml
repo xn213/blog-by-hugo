@@ -6,10 +6,19 @@
     <description>Recent content in Posts on xn213</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2019 08:37:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 19:21:13 +0800</lastBuildDate>
     
 	<atom:link href="https://xn213.github.io/hugo-blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>编码规范</title>
+      <link>https://xn213.github.io/hugo-blog/2019/07/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Tue, 23 Jul 2019 19:21:13 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/07/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</guid>
+      <description> 风格  使用 arrow 函数代替匿名函数表达式。 只要需要的时候才把 arrow 函数的参数括起来。 比如，(x) =&amp;gt; x + x 是错误的，下面是正确的做法： i. x =&amp;gt; x + x ii. (x,y) =&amp;gt; x + y iii. &amp;lt;T&amp;gt;(x: T, y: T) =&amp;gt; x === y 总是使用 {} 把循环体和条件语句括起来。 开始的 { 总是在同一行。 小括号里开始不要有空白. 逗号，冒号，分号后要有一个空格。比如： i. for (var i = 0, n = str.length; i &amp;lt; 10; i++) { } ii. if (x &amp;lt; 10) { } iii. function f(x: number, y: string): void { } 每个变量声明语句只声明一个变量 （比如 使用 var x = 1; var y = 2; 而不是 var x = 1, y = 2;）。 else 要在结束的 } 后另起一行。  </description>
+    </item>
     
     <item>
       <title>社会求助: 张天媛患白血病寻找亲生父母</title>
