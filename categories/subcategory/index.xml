@@ -53,5 +53,14 @@
 # 初始化项目 hexo init # 默认克隆一个landscape 主题: themes/landscape; # 默认创建一篇文章: source/_posts/hello-world.</description>
     </item>
     
+    <item>
+      <title>Ruoxiyy</title>
+      <link>https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/</link>
+      <pubDate>Mon, 25 Mar 2019 10:52:13 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
