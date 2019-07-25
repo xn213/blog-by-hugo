@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>移动端 on xn213</title>
+    <link>https://xn213.github.io/hugo-blog/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
+    <description>Recent content in 移动端 on xn213</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Sep 2015 19:16:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://xn213.github.io/hugo-blog/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>移动端页面开发资源总结</title>
+      <link>https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 25 Sep 2015 19:16:35 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/</guid>
+      <description>移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
+一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&amp;quot; /&amp;gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&amp;quot; /&amp;gt;   禁止将页面中的数字识别为电话号码  &amp;lt;meta name=&amp;quot;format-detection&amp;quot; content=&amp;quot;telephone=no&amp;quot; /&amp;gt;   忽略Android平台中对邮箱地址的识别  &amp;lt;meta name=&amp;quot;format-detection&amp;quot; content=&amp;quot;email=no&amp;quot; /&amp;gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &amp;lt;meta name=&amp;quot;apple-mobile-web-app-capable&amp;quot; content=&amp;quot;yes&amp;quot; /&amp;gt; &amp;lt;!-- ios7.0版本以后，safari上已看不到效果 --&amp;gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &amp;lt;meta name=&amp;quot;apple-mobile-web-app-status-bar-style&amp;quot; content=&amp;quot;black&amp;quot; /&amp;gt; &amp;lt;!-- 可选default、black、black-translucent --&amp;gt;  viewport 模板 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta content=&amp;quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&amp;quot; name=&amp;quot;viewport&amp;quot;&amp;gt; &amp;lt;meta content=&amp;quot;yes&amp;quot; name=&amp;quot;apple-mobile-web-app-capable&amp;quot;&amp;gt; &amp;lt;meta content=&amp;quot;black&amp;quot; name=&amp;quot;apple-mobile-web-app-status-bar-style&amp;quot;&amp;gt; &amp;lt;meta content=&amp;quot;telephone=no&amp;quot; name=&amp;quot;format-detection&amp;quot;&amp;gt; &amp;lt;meta content=&amp;quot;email=no&amp;quot; name=&amp;quot;format-detection&amp;quot;&amp;gt; &amp;lt;title&amp;gt;title&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;index.</description>
+    </item>
+    
+  </channel>
+</rss>

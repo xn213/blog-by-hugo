@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
-<meta name="keywords" content="博客 工具 hugo, vue, react, development">
+<meta name="keywords" content="博客 工具 hugo, vue, vuejs, nodejs, react, development">
 <meta name="description" content="使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
  一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
  配置环境变量: 系统&gt;高级系统设置&gt;环境变量&gt;系统变量&gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到PATH编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
@@ -64,9 +64,6 @@
 
 
 
-
-  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/cover.png">
-  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/cover.png">
 
 
   <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/cover.png">
@@ -369,11 +366,11 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
 
 <p>图片路径: <code>content/post/img/aa.jpg</code></p>
 
-<p><code>hugo new post/first-blog.md</code> 创建路径为 <code>content/post/first-blog.md</code></p>
-
 <p>图片使用: <code>![aa.jpg](/post/img/aa.jpg)</code></p>
 
 <blockquote>
+<p><code>hugo new post/first-blog.md</code> 创建路径为 <code>content/post/first-blog.md</code></p>
+
 <p>打包后会 <code>meta</code> 标签定义 <code>baseUrl='协议域名/项目名/'</code> 在根目录下创建 <code>post/img/aa.jpg</code>,</p>
 
 <p>故部署后请求 <code>域名/项目名/post/img/aa.jpg</code></p>
@@ -434,19 +431,19 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -520,19 +517,19 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -562,19 +559,19 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F%29">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F%29">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F%29">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>

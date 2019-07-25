@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="author" content="xn213">
+<meta name="keywords" content="移动端, 开发技巧, 总结, meta, vue, vuejs, nodejs, react, development">
+<meta name="description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
+一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+
+
+<meta property="og:description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
+一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端页面开发资源总结">
+<meta name="twitter:title" content="移动端页面开发资源总结">
+<meta property="og:url" content="https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/">
+<meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/">
+<meta property="og:site_name" content="xn213">
+<meta property="og:description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
+一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+<meta name="twitter:description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
+一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2015-09-25T19:16:35">
+  
+  
+    <meta property="article:modified_time" content="2015-09-25T19:16:35">
+  
+  
+  
+    
+      <meta property="article:section" content="移动端">
+    
+      <meta property="article:section" content="总结">
+    
+  
+  
+    
+      <meta property="article:tag" content="移动端">
+    
+      <meta property="article:tag" content="总结">
+    
+      <meta property="article:tag" content="技巧">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://xn213.github.io/images/cover.png">
+  <meta property="twitter:image" content="https://xn213.github.io/images/cover.png">
+
+
+  <meta property="og:image" content="https://xn213.github.io/images/cover.png">
+  <meta property="twitter:image" content="https://xn213.github.io/images/cover.png">
+
+
+
+
+  <meta property="og:image" content="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80">
+  <meta property="twitter:image" content="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80">
+
+
+    <title>移动端页面开发资源总结</title>
+
+    <link rel="icon" href="https://xn213.github.io/hugo-blog/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://xn213.github.io/hugo-blog/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://xn213.github.io/hugo-blog/">xn213</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://xn213.github.io/hugo-blog/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://xn213.github.io/hugo-blog/#about">
+          <img class="sidebar-profile-picture" src="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">xn213</h4>
+        
+          <h5 class="sidebar-profile-bio">余生 倾尽天下</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">类别</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/xn213" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              post-header-cover--full"
+       style="background-image:url('/images/cover.png')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      移动端页面开发资源总结
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-09-25T19:16:35&#43;08:00">
+        
+  September 25, 2015
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e7%a7%bb%e5%8a%a8%e7%ab%af">移动端</a>, 
+    
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e6%80%bb%e7%bb%93">总结</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               hasCoverCaption">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+            <span class="post-header-cover-caption caption">文章cover图片描述</span>
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<h1 id="移动端页面开发资源总结">移动端页面开发资源总结</h1>
+
+<h2 id="移动端页面开发资源总结及技巧">移动端页面开发资源总结及技巧</h2>
+
+<p>工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！</p>
+
+<h2 id="一-meta标签相关知识">一、meta标签相关知识</h2>
+
+<ol>
+<li>移动端页面设置视口宽度等于设备宽度，并禁止缩放。</li>
+</ol>
+
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;
+</code></pre>
+
+<ol>
+<li>移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。</li>
+</ol>
+
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;
+</code></pre>
+
+<ol>
+<li>禁止将页面中的数字识别为电话号码</li>
+</ol>
+
+<pre><code class="language-html">&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;
+</code></pre>
+
+<ol>
+<li>忽略Android平台中对邮箱地址的识别</li>
+</ol>
+
+<pre><code class="language-html">&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;
+</code></pre>
+
+<ol>
+<li>当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari</li>
+</ol>
+
+<pre><code class="language-html">&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;
+</code></pre>
+
+<ol>
+<li>将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式</li>
+</ol>
+
+<pre><code class="language-html">&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt;
+&lt;!-- 可选default、black、black-translucent --&gt;
+</code></pre>
+
+<h2 id="viewport-模板">viewport 模板</h2>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt;
+  &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt;
+  &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt;
+  &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt;
+  &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt;
+  &lt;title&gt;title&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  content...
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<h2 id="二-css-样式技巧">二、CSS 样式技巧</h2>
+
+<p>1、禁止 <code>ios</code> 和 <code>android</code> 用户选中文字</p>
+
+<pre><code class="language-css">.css{-webkit-user-select:none}
+</code></pre>
+
+<p>2、禁止 <code>ios</code> 长按时触发系统的菜单，禁止 <code>ios&amp;android</code> 长按时下载图片</p>
+
+<pre><code class="language-css">.css{-webkit-touch-callout: none}
+</code></pre>
+
+<p>3、webkit 去除表单元素的默认样式</p>
+
+<pre><code class="language-css">.css{-webkit-appearance:none;}
+</code></pre>
+
+<p>4、修改 webkit 表单输入框 placeholder 的样式</p>
+
+<pre><code class="language-css">input::-webkit-input-placeholder{color:#AAAAAA;}
+input:focus::-webkit-input-placeholder{color:#EEEEEE;}
+</code></pre>
+
+<p>5、去除 <code>android a/button/input</code> 标签被点击时产生的边框 &amp; 去除 <code>ios a</code> 标签被点击时产生的半透明灰色背景</p>
+
+<pre><code class="language-css">a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+</code></pre>
+
+<p>6、<code>ios</code> 使用 <code>-webkit-text-size-adjust</code> 禁止调整字体大小</p>
+
+<pre><code class="language-css">body{-webkit-text-size-adjust: 100%!important;}
+</code></pre>
+
+<p>7、android 上去掉语音输入按钮</p>
+
+<pre><code class="language-css">input::-webkit-input-speech-button {display: none}
+</code></pre>
+
+<p>8、移动端定义字体，移动端没有微软雅黑字体</p>
+
+<pre><code class="language-css">/* 移动端定义字体的代码 */
+body{font-family: Helvetica;}
+</code></pre>
+
+<p>9、禁用 <code>Webkit</code> 内核浏览器的文字大小调整功能。</p>
+
+<pre><code class="language-css">  -webkit-text-size-adjust: none;
+</code></pre>
+
+<p>10、去掉 <code>input[type=search]</code> 搜索框默认的叉号</p>
+
+<pre><code class="language-css">input[type=&quot;search&quot;]{
+  -webkit-appearance:none;
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+</code></pre>
+
+<h2 id="三-其他技巧">三、其他技巧</h2>
+
+<p>1、手机拍照和上传图片</p>
+
+<pre><code class="language-html">&lt;!-- 选择照片 --&gt;
+&lt;input type=file accept=&quot;image/*&quot;&gt;
+&lt;!-- 选择视频 --&gt;
+&lt;input type=file accept=&quot;video/*&quot;&gt;
+</code></pre>
+
+<p>2、取消input在ios下，输入的时候英文首字母的默认大写</p>
+
+<pre><code class="language-html">&lt;input autocapitalize=&quot;off&quot; autocorrect=&quot;off&quot; /&gt;
+</code></pre>
+
+<p>3、打电话和发短信</p>
+
+<pre><code class="language-html">&lt;a href=&quot;tel:0755-10086&quot;&gt;打电话给:0755-10086&lt;/a&gt;
+&lt;a href=&quot;sms:10086&quot;&gt;发短信给: 10086&lt;/a&gt;
+</code></pre>
+
+<h2 id="四-css-reset">四、CSS reset</h2>
+
+<pre><code class="language-css">/* hcysun  */
+@charset &quot;utf-8&quot;;
+/* reset */
+html{
+  -webkit-text-size-adjust:none;
+  -webkit-user-select:none;
+  -webkit-touch-callout: none
+  font-family: Helvetica;
+}
+body{font-size: 12px;}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin:0; padding:0; font-weight: normal;text-indent: 0;}
+a,button,input,textarea,select{ background: none; -webkit-tap-highlight-color: rgba(255,0,0,0); outline:none; -webkit-appearance:none;}
+em{font-style:normal}
+li{list-style:none}
+a{text-decoration:none;}
+img{border:none; vertical-align:top;}
+table{border-collapse:collapse;}
+textarea{ resize:none; overflow:auto;}
+/* end reset */
+</code></pre>
+
+<h2 id="五-常用公用css-style">五、常用公用CSS style</h2>
+
+<pre><code class="language-css">/* public */
+
+/* 清除浮动 */
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+
+/* 定义盒模型为怪异和模型（宽高不受边框影响） */
+.boxSiz{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 强制换行 */
+.toWrap{
+  word-break: break-all;       /* 只对英文起作用，以字母作为换行依据。 */
+  word-wrap: break-word;       /* 只对英文起作用，以单词作为换行依据。*/
+  white-space: pre-wrap;       /* 只对中文起作用，强制换行。*/
+}
+
+/* 禁止换行 */
+.noWrap{
+  white-space:nowrap;
+}
+
+/* 禁止换行,超出省略号 */
+.noWrapEllipsis{
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+/* 多行显示省略号，less写法，@line是行数 */
+.ellipsisLn(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+}
+
+/* 1px 边框解决方案，示例中设置上边框，可以调整 top、right、bottom、left 的值分别设置上下左右边框 */
+#box2:after{
+  content: &quot; &quot;;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #000;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+/* 文字两端对齐 */
+.text-justify{
+  text-align:justify; 
+  text-justify:inter-ideograph;
+}
+
+/* 定义盒模型为 flex布局兼容写法并让内容水平垂直居中 */
+.flex-center{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: box;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -o-box-pack: center;
+  box-pack: center;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -o-box-align: center;
+  box-align: center;
+}
+
+/* public end */
+</code></pre>
+
+<h2 id="六-flex布局">六、flex布局</h2>
+
+<ol>
+<li>定义弹性盒模型兼容写法</li>
+</ol>
+
+<pre><code class="language-css">  /*
+      box
+      inline-box
+  */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: box;
+</code></pre>
+
+<ol>
+<li>box-orient 定义盒模型内伸缩项目的布局方向</li>
+</ol>
+
+<pre><code class="language-css">  /**
+  * vertical column    垂直
+  * horizontal row    水平 默认值
+  */
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -o-box-orient: horizontal;
+  box-orient: horizontal;
+</code></pre>
+
+<ol>
+<li>box-direction 定义盒模型内伸缩项目的正序(normal默认值)、倒叙(reverse)</li>
+</ol>
+
+<pre><code class="language-css">  /* Firefox */
+  display: -moz-box;
+  -moz-box-direction: reverse;
+  /* Safari、Opera 以及 Chrome */
+  display: -webkit-box;
+  -webkit-box-direction: reverse;
+</code></pre>
+
+<ol>
+<li>box-pack 对盒子水平富裕空间的管理</li>
+</ol>
+
+<pre><code class="language-css">  /*
+      start
+      end
+      center
+      justify
+  */
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -o-box-pack: center;
+  box-pack: center;
+</code></pre>
+
+<ol>
+<li>box-pack 对盒子垂直方向富裕空间的管理</li>
+</ol>
+
+<pre><code class="language-css">  /*
+      start
+      end
+      center
+  */
+  /* box-align */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -o-box-align: center;
+  box-align: center;
+</code></pre>
+
+<ol>
+<li>定义伸缩项目的具体位置</li>
+</ol>
+
+<pre><code class="language-css">  /*-moz-box-ordinal-group:1;*/ /* Firefox */
+  /*-webkit-box-ordinal-group:1;*/ /* Safari 和 Chrome */
+  .box div:nth-of-type(1){-webkit-box-ordinal-group: 1;}
+  .box div:nth-of-type(2){-webkit-box-ordinal-group: 2;}
+  .box div:nth-of-type(3){-webkit-box-ordinal-group: 3;}
+  .box div:nth-of-type(4){-webkit-box-ordinal-group: 4;}
+  .box div:nth-of-type(5){-webkit-box-ordinal-group: 5;}
+</code></pre>
+
+<ol>
+<li>定义伸缩项目占空间的份数</li>
+</ol>
+
+<pre><code class="language-css">  -moz-box-flex:2.0; /* Firefox */
+  -webkit-box-flex:2.0; /* Safari 和 Chrome */
+
+  .box div:nth-of-type(1){-webkit-box-flex: 1;}
+  .box div:nth-of-type(2){-webkit-box-flex: 2;}
+  .box div:nth-of-type(3){-webkit-box-flex: 3;}
+  .box div:nth-of-type(4){-webkit-box-flex: 4;}
+  .box div:nth-of-type(5){-webkit-box-flex: 5;}
+</code></pre>
+
+<ul>
+<li><a href="http://hcysun.me/2015/09/25/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/">原文 - HcySunYang</a></li>
+</ul>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a>
+
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/%E6%80%BB%E7%BB%93/">总结</a>
+
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/%E6%8A%80%E5%B7%A7/">技巧</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/%29">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/%29">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 xn213. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/%29">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/%29">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2015%2F09%2F%25E7%25A7%25BB%25E5%258A%25A8%25E7%25AB%25AF%25E9%25A1%25B5%25E9%259D%25A2%25E5%25BC%2580%25E5%258F%2591%25E8%25B5%2584%25E6%25BA%2590%25E6%2580%25BB%25E7%25BB%2593%2F%29">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2015%2F09%2F%25E7%25A7%25BB%25E5%258A%25A8%25E7%25AB%25AF%25E9%25A1%25B5%25E9%259D%25A2%25E5%25BC%2580%25E5%258F%2591%25E8%25B5%2584%25E6%25BA%2590%25E6%2580%25BB%25E7%25BB%2593%2F%29">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2015%2F09%2F%25E7%25A7%25BB%25E5%258A%25A8%25E7%25AB%25AF%25E9%25A1%25B5%25E9%259D%25A2%25E5%25BC%2580%25E5%258F%2591%25E8%25B5%2584%25E6%25BA%2590%25E6%2580%25BB%25E7%25BB%2593%2F%29">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">xn213</h4>
+    
+      <div id="about-card-bio">余生 倾尽天下</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        FE
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Peking
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://xn213.github.io/hugo-blog/images/cover.png');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://xn213.github.io/hugo-blog/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/xn213.github.io\/hugo-blog\/2015\/09\/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93\/';
+          
+            this.page.identifier = '\/2015\/09\/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
