@@ -9,11 +9,23 @@
 <meta name="author" content="xn213">
 <meta name="keywords" content="移动端, 开发技巧, 总结, meta, vue, vuejs, nodejs, react, development">
 <meta name="description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
-一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+一、meta标签相关知识 1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  3、禁止将页面中的数字识别为电话号码
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;  4、忽略Android平台中对邮箱地址的识别
+&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;  5、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;  6、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
 
 
 <meta property="og:description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
-一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+一、meta标签相关知识 1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  3、禁止将页面中的数字识别为电话号码
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;  4、忽略Android平台中对邮箱地址的识别
+&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;  5、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;  6、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动端页面开发资源总结">
 <meta name="twitter:title" content="移动端页面开发资源总结">
@@ -21,9 +33,21 @@
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/">
 <meta property="og:site_name" content="xn213">
 <meta property="og:description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
-一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+一、meta标签相关知识 1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  3、禁止将页面中的数字识别为电话号码
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;  4、忽略Android平台中对邮箱地址的识别
+&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;  5、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;  6、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
 <meta name="twitter:description" content="移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
-一、meta标签相关知识  移动端页面设置视口宽度等于设备宽度，并禁止缩放。  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。  &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;   禁止将页面中的数字识别为电话号码  &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;   忽略Android平台中对邮箱地址的识别  &lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;   当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;   将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
+一、meta标签相关知识 1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。
+&lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  3、禁止将页面中的数字识别为电话号码
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;  4、忽略Android平台中对邮箱地址的识别
+&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;  5、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;  6、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt; &lt;!-- 可选default、black、black-translucent --&gt;  viewport 模板 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt; &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt; &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt; &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt; &lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt; &lt;title&gt;title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;index.">
 <meta property="og:locale" content="en-us">
 
   
@@ -36,8 +60,6 @@
   
     
       <meta property="article:section" content="移动端">
-    
-      <meta property="article:section" content="总结">
     
   
   
@@ -245,9 +267,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e7%a7%bb%e5%8a%a8%e7%ab%af">移动端</a>, 
-    
-      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e6%80%bb%e7%bb%93">总结</a>
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e7%a7%bb%e5%8a%a8%e7%ab%af">移动端</a>
     
   
 
@@ -264,7 +284,7 @@
                hasCoverCaption">
         <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
-            <span class="post-header-cover-caption caption">文章cover图片描述</span>
+            <span class="post-header-cover-caption caption">移动端页面开发技巧总结</span>
           
           
           <div class="post-content markdown" itemprop="articleBody">
@@ -279,45 +299,33 @@
 
 <h2 id="一-meta标签相关知识">一、meta标签相关知识</h2>
 
-<ol>
-<li>移动端页面设置视口宽度等于设备宽度，并禁止缩放。</li>
-</ol>
+<p>1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。</p>
 
 <pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;
 </code></pre>
 
-<ol>
-<li>移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。</li>
-</ol>
+<p>2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。</p>
 
 <pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;
 </code></pre>
 
-<ol>
-<li>禁止将页面中的数字识别为电话号码</li>
-</ol>
+<p>3、禁止将页面中的数字识别为电话号码</p>
 
 <pre><code class="language-html">&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;
 </code></pre>
 
-<ol>
-<li>忽略Android平台中对邮箱地址的识别</li>
-</ol>
+<p>4、忽略Android平台中对邮箱地址的识别</p>
 
 <pre><code class="language-html">&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;
 </code></pre>
 
-<ol>
-<li>当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari</li>
-</ol>
+<p>5、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari</p>
 
 <pre><code class="language-html">&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
 &lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;
 </code></pre>
 
-<ol>
-<li>将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式</li>
-</ol>
+<p>6、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式</p>
 
 <pre><code class="language-html">&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt;
 &lt;!-- 可选default、black、black-translucent --&gt;
@@ -537,9 +545,7 @@ textarea{ resize:none; overflow:auto;}
 
 <h2 id="六-flex布局">六、flex布局</h2>
 
-<ol>
-<li>定义弹性盒模型兼容写法</li>
-</ol>
+<p>1、定义弹性盒模型兼容写法</p>
 
 <pre><code class="language-css">  /*
       box
@@ -552,9 +558,7 @@ textarea{ resize:none; overflow:auto;}
   display: box;
 </code></pre>
 
-<ol>
-<li>box-orient 定义盒模型内伸缩项目的布局方向</li>
-</ol>
+<p>2、box-orient 定义盒模型内伸缩项目的布局方向</p>
 
 <pre><code class="language-css">  /**
   * vertical column    垂直
@@ -567,9 +571,7 @@ textarea{ resize:none; overflow:auto;}
   box-orient: horizontal;
 </code></pre>
 
-<ol>
-<li>box-direction 定义盒模型内伸缩项目的正序(normal默认值)、倒叙(reverse)</li>
-</ol>
+<p>3、box-direction 定义盒模型内伸缩项目的正序(normal默认值)、倒叙(reverse)</p>
 
 <pre><code class="language-css">  /* Firefox */
   display: -moz-box;
@@ -579,9 +581,7 @@ textarea{ resize:none; overflow:auto;}
   -webkit-box-direction: reverse;
 </code></pre>
 
-<ol>
-<li>box-pack 对盒子水平富裕空间的管理</li>
-</ol>
+<p>4、box-pack 对盒子水平富裕空间的管理</p>
 
 <pre><code class="language-css">  /*
       start
@@ -596,9 +596,7 @@ textarea{ resize:none; overflow:auto;}
   box-pack: center;
 </code></pre>
 
-<ol>
-<li>box-pack 对盒子垂直方向富裕空间的管理</li>
-</ol>
+<p>5、box-pack 对盒子垂直方向富裕空间的管理</p>
 
 <pre><code class="language-css">  /*
       start
@@ -613,9 +611,7 @@ textarea{ resize:none; overflow:auto;}
   box-align: center;
 </code></pre>
 
-<ol>
-<li>定义伸缩项目的具体位置</li>
-</ol>
+<p>6、定义伸缩项目的具体位置</p>
 
 <pre><code class="language-css">  /*-moz-box-ordinal-group:1;*/ /* Firefox */
   /*-webkit-box-ordinal-group:1;*/ /* Safari 和 Chrome */
@@ -626,9 +622,7 @@ textarea{ resize:none; overflow:auto;}
   .box div:nth-of-type(5){-webkit-box-ordinal-group: 5;}
 </code></pre>
 
-<ol>
-<li>定义伸缩项目占空间的份数</li>
-</ol>
+<p>7、定义伸缩项目占空间的份数</p>
 
 <pre><code class="language-css">  -moz-box-flex:2.0; /* Firefox */
   -webkit-box-flex:2.0; /* Safari 和 Chrome */

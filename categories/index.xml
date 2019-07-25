@@ -12,29 +12,38 @@
     
     
     <item>
-      <title>category</title>
-      <link>https://xn213.github.io/hugo-blog/categories/category/</link>
+      <title>规范</title>
+      <link>https://xn213.github.io/hugo-blog/categories/%E8%A7%84%E8%8C%83/</link>
       <pubDate>Tue, 23 Jul 2019 19:21:13 +0800</pubDate>
       
-      <guid>https://xn213.github.io/hugo-blog/categories/category/</guid>
+      <guid>https://xn213.github.io/hugo-blog/categories/%E8%A7%84%E8%8C%83/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>subcategory</title>
-      <link>https://xn213.github.io/hugo-blog/categories/subcategory/</link>
-      <pubDate>Tue, 23 Jul 2019 19:21:13 +0800</pubDate>
+      <title>help</title>
+      <link>https://xn213.github.io/hugo-blog/categories/help/</link>
+      <pubDate>Mon, 22 Jul 2019 08:37:10 +0800</pubDate>
       
-      <guid>https://xn213.github.io/hugo-blog/categories/subcategory/</guid>
+      <guid>https://xn213.github.io/hugo-blog/categories/help/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>总结</title>
-      <link>https://xn213.github.io/hugo-blog/categories/%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Fri, 25 Sep 2015 19:16:35 +0800</pubDate>
+      <title>技巧</title>
+      <link>https://xn213.github.io/hugo-blog/categories/%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Sat, 20 Jul 2019 17:23:20 +0800</pubDate>
       
-      <guid>https://xn213.github.io/hugo-blog/categories/%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://xn213.github.io/hugo-blog/categories/%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>精神食粮</title>
+      <link>https://xn213.github.io/hugo-blog/categories/%E7%B2%BE%E7%A5%9E%E9%A3%9F%E7%B2%AE/</link>
+      <pubDate>Mon, 25 Mar 2019 10:52:13 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/categories/%E7%B2%BE%E7%A5%9E%E9%A3%9F%E7%B2%AE/</guid>
       <description></description>
     </item>
     
