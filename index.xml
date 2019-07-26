@@ -63,6 +63,39 @@
     </item>
     
     <item>
+      <title>Code Snippets</title>
+      <link>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</link>
+      <pubDate>Tue, 25 Jul 2017 21:13:32 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</guid>
+      <description>Code Snippets // isObject function isObject (obj) { return obj !== null &amp;amp;&amp;amp; typeof obj === &#39;object&#39; } //  ↑ back to top
+// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &amp;gt; 0 ? arguments.callee(n - 1, b, a + b) : a; } (n, 0, 1); } //  ↑ back to top</description>
+    </item>
+    
+    <item>
+      <title>Js 面试题大搜罗</title>
+      <link>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</link>
+      <pubDate>Tue, 25 Jul 2017 17:50:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</guid>
+      <description>js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] console.log(JSON.stringify(obj)); // {&amp;quot;a&amp;quot;:1,&amp;quot;b&amp;quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.</description>
+    </item>
+    
+    <item>
+      <title>Fe Solutions</title>
+      <link>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</link>
+      <pubDate>Mon, 13 Feb 2017 21:13:10 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</guid>
+      <description>前端遇到的问题及解决方案  input标签怎么才能只输入数字？   &amp;lt;!-- h5的标签属性 --&amp;gt; &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;  用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
+&amp;lt;input type=&amp;quot;text&amp;quot; onkeypress=&amp;quot;return event.keyCode&amp;gt;=48&amp;amp;&amp;amp;event.keyCode&amp;lt;=57&amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot; /&amp;gt; &amp;lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; onkeyup=&amp;quot;value=value.replace(/[^\d]/g,&#39;&#39;) &amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;&amp;gt; &amp;lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;。 --&amp;gt;  ↑ back to top
+ Vscode 格式化 vue Template 代码段  1、安装 vetur
+2、在 User Setting 中增加设置: &amp;quot;vetur.format.defaultFormatter.html&amp;quot;: &amp;quot;js-beautify-html&amp;quot;
+3、搞定 : 格式化快捷键：Alt+Shift+F
+↑ back to top</description>
+    </item>
+    
+    <item>
       <title>移动端页面开发资源总结</title>
       <link>https://xn213.github.io/hugo-blog/2015/09/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 25 Sep 2015 19:16:35 +0800</pubDate>

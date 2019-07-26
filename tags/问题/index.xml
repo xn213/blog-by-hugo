@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>问题 on xn213</title>
+    <link>https://xn213.github.io/hugo-blog/tags/%E9%97%AE%E9%A2%98/</link>
+    <description>Recent content in 问题 on xn213</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Feb 2017 21:13:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://xn213.github.io/hugo-blog/tags/%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fe Solutions</title>
+      <link>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</link>
+      <pubDate>Mon, 13 Feb 2017 21:13:10 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</guid>
+      <description>前端遇到的问题及解决方案  input标签怎么才能只输入数字？   &amp;lt;!-- h5的标签属性 --&amp;gt; &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;  用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
+&amp;lt;input type=&amp;quot;text&amp;quot; onkeypress=&amp;quot;return event.keyCode&amp;gt;=48&amp;amp;&amp;amp;event.keyCode&amp;lt;=57&amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot; /&amp;gt; &amp;lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; onkeyup=&amp;quot;value=value.replace(/[^\d]/g,&#39;&#39;) &amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;&amp;gt; &amp;lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;。 --&amp;gt;  ↑ back to top
+ Vscode 格式化 vue Template 代码段  1、安装 vetur
+2、在 User Setting 中增加设置: &amp;quot;vetur.format.defaultFormatter.html&amp;quot;: &amp;quot;js-beautify-html&amp;quot;
+3、搞定 : 格式化快捷键：Alt+Shift+F
+↑ back to top</description>
+    </item>
+    
+  </channel>
+</rss>

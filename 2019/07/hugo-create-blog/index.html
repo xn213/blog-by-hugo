@@ -64,8 +64,8 @@
 
 
 
-  <meta property="og:image" content="https://xn213.github.io/images/cover.png">
-  <meta property="twitter:image" content="https://xn213.github.io/images/cover.png">
+  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/cover.png">
+  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/cover.png">
 
 
 
@@ -223,7 +223,7 @@
   <div class="post-header-cover
               text-center
               post-header-cover--full"
-       style="background-image:url('/images/cover.png')"
+       style="background-image:url('/hugo-blog/images/cover.png')"
        data-behavior="5">
     
       <div class="post-header main-content-wrap text-center">
@@ -344,14 +344,14 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
 
 <pre><code class="language-bash">   # 首先打包, 生成 public
    # --themes=hugo-tranquilpeak-theme 指定主题 --baseUrl=&quot;部署地址&quot; --buildDrafts build
-   hugo --theme=hugo-tranquilpeak-theme --baseUrl=&quot;https://xn213.github.io&quot;
+   hugo --theme=hugo-tranquilpeak-theme --baseUrl=&quot;https://xn213.github.io/hugo-blog&quot;
 
    # 进入 public  使用 git push 到 github
    git init
    git add .
    git commit -m '第一次提交 hugo 创建的博客'
    # 本地关联远端
-   git remote add origin https://github.com/xn213.git
+   git remote add origin https://github.com/xn213/hugo-blog.git
    git push -u origin master
 </code></pre>
 
@@ -371,7 +371,7 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
 
 <p>故部署后请求 <code>域名/项目名/post/img/aa.jpg</code></p>
 
-<p>如: <code>https://xn213.github.io/post/img/aa.jpg</code></p>
+<p>如: <code>https://xn213.github.io/hugo-blog/post/img/aa.jpg</code></p>
 </blockquote></li>
 </ol>
 
