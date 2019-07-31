@@ -9,11 +9,13 @@
 <meta name="author" content="xn213">
 <meta name="keywords" content="代码段, code-snippets, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
 <meta name="description" content="Code Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } //  ↑ back to top
-// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top">
+// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top
+// 第 114 题：编程题，找出字符串中连续出现最多的字符和个数 // &#39;abcaakjbb&#39; =&gt; {&#39;a&#39;:2,&#39;b&#39;:2} // &#39;abbkejsbcccwqaa&#39; =&gt; {&#39;c&#39;:3} const arr = str.">
 
 
 <meta property="og:description" content="Code Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } //  ↑ back to top
-// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top">
+// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top
+// 第 114 题：编程题，找出字符串中连续出现最多的字符和个数 // &#39;abcaakjbb&#39; =&gt; {&#39;a&#39;:2,&#39;b&#39;:2} // &#39;abbkejsbcccwqaa&#39; =&gt; {&#39;c&#39;:3} const arr = str.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Code Snippets">
 <meta name="twitter:title" content="Code Snippets">
@@ -21,9 +23,11 @@
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2017/07/code-snippets/">
 <meta property="og:site_name" content="xn213">
 <meta property="og:description" content="Code Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } //  ↑ back to top
-// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top">
+// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top
+// 第 114 题：编程题，找出字符串中连续出现最多的字符和个数 // &#39;abcaakjbb&#39; =&gt; {&#39;a&#39;:2,&#39;b&#39;:2} // &#39;abbkejsbcccwqaa&#39; =&gt; {&#39;c&#39;:3} const arr = str.">
 <meta name="twitter:description" content="Code Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } //  ↑ back to top
-// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top">
+// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a &#43; b) : a; } (n, 0, 1); } //  ↑ back to top
+// 第 114 题：编程题，找出字符串中连续出现最多的字符和个数 // &#39;abcaakjbb&#39; =&gt; {&#39;a&#39;:2,&#39;b&#39;:2} // &#39;abbkejsbcccwqaa&#39; =&gt; {&#39;c&#39;:3} const arr = str.">
 <meta property="og:locale" content="en-us">
 
   
@@ -283,6 +287,48 @@ function fib(n) {
 }
 
 // 
+</code></pre>
+
+<p><a href="#code-snippets">↑ back to top</a></p>
+
+<pre><code class="language-js">// 第 114 题：编程题，找出字符串中连续出现最多的字符和个数
+// 'abcaakjbb' =&gt; {'a':2,'b':2}
+// 'abbkejsbcccwqaa' =&gt; {'c':3}
+const arr = str.match(/(\w)\1*/g);
+const maxLen = Math.max(...arr.map(s =&gt; s.length));
+const result = arr.reduce((pre, curr) =&gt; {
+  if (curr.length === maxLen) {
+    pre[curr[0]] = curr.length;
+  }
+  return pre;
+}, {});
+
+console.log(result);
+</code></pre>
+
+<p><a href="#code-snippets">↑ back to top</a></p>
+
+<pre><code class="language-js">// 116
+1 + &quot;1&quot; // 11
+2 * &quot;2&quot; // 4
+[1, 2] + [2, 1] // &quot;1,22,1&quot;
+&quot;a&quot; + + &quot;b&quot; // aNaN
+
+1 + &quot;1&quot;
+// 加性操作符：如果只有一个操作数是字符串，则将另一个操作数转换为字符串，然后再将两个字符串拼接起来所以值为：“11”
+
+2 * &quot;2&quot;
+// 乘性操作符：如果有一个操作数不是数值，则在后台调用 Number()将其转换为数值
+
+[1, 2] + [2, 1]
+// Javascript中所有对象基本都是先调用valueOf方法，如果不是数值，再调用toString方法。
+// 所以两个数组对象的toString方法相加，值为：&quot;1,22,1&quot;
+
+&quot;a&quot; + + &quot;b&quot;
+// 后边的“+”将作为一元操作符，如果操作数是字符串，将调用Number方法将该操作数转为数值，如果操作数无法转为数值，则为NaN。
+// 所以值为：&quot;aNaN&quot;
+
+// 以上均参考：《Javascript高级程序设计》
 </code></pre>
 
 <p><a href="#code-snippets">↑ back to top</a></p>
