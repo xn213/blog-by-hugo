@@ -129,6 +129,29 @@
   </url>
   
   <url>
+    <loc>https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/</loc>
+    <lastmod>2018-11-28T01:21:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2018-11-28T01:21:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2018-11-28T01:21:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2018-11-28T01:21:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</loc>
     <lastmod>2017-07-25T21:13:32+08:00</lastmod>
   </url>
@@ -157,12 +180,6 @@
   </url>
   
   <url>
-    <loc>https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2017-07-25T17:50:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://xn213.github.io/hugo-blog/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2017-07-25T17:50:20+08:00</lastmod>
     <priority>0</priority>
@@ -171,12 +188,6 @@
   <url>
     <loc>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</loc>
     <lastmod>2017-02-13T21:13:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xn213.github.io/hugo-blog/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2017-02-13T21:13:10+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

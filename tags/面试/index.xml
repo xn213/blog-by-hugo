@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>面试 on xn213</title>
-    <link>https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/</link>
+    <link>https://xn213.github.io/hugo-blog/tags/%E9%9D%A2%E8%AF%95/</link>
     <description>Recent content in 面试 on xn213</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 01:21:13 +0800</lastBuildDate>
     
-	<atom:link href="https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xn213.github.io/hugo-blog/tags/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -33,15 +33,6 @@ css 动画和 js 动画的差异
 XSS 与 CSRF 两种跨站攻击
  xss 跨站脚本攻击，主要是前端层面的，用户在输入层面插入攻击脚本，改变页面的显示，或则窃取网站 cookie，预防方法：不相信用户的所有操作，对用户输入进行一个转义，不允许 js 对 cookie 的读写
   　2.csrf 跨站请求伪造，以你的名义，发送恶意请求，通过 cookie 加参数等形式过滤</description>
-    </item>
-    
-    <item>
-      <title>Js 面试题大搜罗</title>
-      <link>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</link>
-      <pubDate>Tue, 25 Jul 2017 17:50:20 +0800</pubDate>
-      
-      <guid>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</guid>
-      <description>js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] console.log(JSON.stringify(obj)); // {&amp;quot;a&amp;quot;:1,&amp;quot;b&amp;quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.</description>
     </item>
     
   </channel>
