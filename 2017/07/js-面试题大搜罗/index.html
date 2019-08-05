@@ -884,23 +884,56 @@
 ///////////////////////////////
 </code></pre>
 
-<pre><code class="language-js">///////////////////////////////
-  // 
-  
-///////////////////////////////
+<hr />
+
+<h3 id="1-2-3-map-parseint">[&lsquo;1&rsquo;, &lsquo;2&rsquo;, &lsquo;3&rsquo;].map(parseInt)</h3>
+
+<p><strong><code>parseInt(param, radix)</code> 相当于 <code>parseInt(String(param).trim(), radix)</code></strong></p>
+
+<pre><code class="language-js">  // parseInt()
+  const value = parseInt(string[, radix]);
 </code></pre>
 
-<pre><code class="language-js">///////////////////////////////
-  // 
-  
-///////////////////////////////
+<p>其中 string是一个要解析的字符串，如果不是字符串，则使用toString()方法给转换成string，开头的空格会被忽略。</p>
+
+<p>radix是一个介于2-36的整数。表示一个基数，要将字符串转换成这个基数的进制。默认是10。</p>
+
+<p>返回值是一个整数或者NaN。</p>
+
+<pre><code class="language-js">  // map() 创建新数组, 结果是遍历的数组每个元素执行提供的函数返回的结果.
+  const new_array = arr.map(function callback(currentValue[,index[, array]]) {
+    // Return element for new_array
+  }[, thisArg])
 </code></pre>
 
-<pre><code class="language-js">///////////////////////////////
-  // 
-  
-///////////////////////////////
+<pre><code class="language-js">  ['1', '2', '3'].map(parseInt) 
 </code></pre>
+
+<p>这意味着，每个map的迭代，都要给parseInt传递两个参数，item和index，就是字符串和基数。</p>
+
+<p>那这个表达式可以写成</p>
+
+<pre><code class="language-js">  ['1', '2', '3'].map((item, index) =&gt; parseInt(item, index))
+</code></pre>
+
+<p>返回的结果应该是：</p>
+
+<pre><code class="language-js">  parseInt('1', 0) // 1 
+  parseInt('2', 1) // NaN
+  parseInt('3', 2) // NaN 因为3不是2进制里的数，所以就报错。
+</code></pre>
+
+<p>所以该表达式返回的数组为：</p>
+
+<pre><code class="language-js">['1', '2', '3'].map(parseInt) // [1, NaN, NaN]
+</code></pre>
+
+<p>加里·伯恩哈德例子也就很好解释了，这里不再赘述</p>
+
+<pre><code class="language-js">['10','10','10','10','10'].map(parseInt); // [10, NaN, 2, 3, 4]
+</code></pre>
+
+<hr />
 
 <pre><code class="language-js">///////////////////////////////
   // 

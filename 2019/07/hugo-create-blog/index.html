@@ -224,12 +224,12 @@
 
       
   <div class="post-header-cover
-              text-center
+              text-left
               post-header-cover--full"
        style="background-image:url('/hugo-blog/images/ruoxiyy.jpg')"
        data-behavior="5">
     
-      <div class="post-header main-content-wrap text-center">
+      <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
       Hugo Create Blog
@@ -363,18 +363,18 @@ window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也�
 <ol>
 <li><p>.md 中引用本地图片部署后路径问题:</p>
 
-<p>图片路径: <code>content/post/img/aa.jpg</code></p>
+<p>图片路径: <code>content/post/img/test.jpg</code></p>
 
-<p>图片使用: <code>![aa.jpg](/post/img/aa.jpg)</code></p>
+<p>图片使用: <code>![test.jpg](/post/img/test.jpg)</code></p>
 
 <blockquote>
 <p><code>hugo new post/first-blog.md</code> 创建路径为 <code>content/post/first-blog.md</code></p>
 
-<p>打包后会 <code>meta</code> 标签定义 <code>baseUrl='协议域名/项目名/'</code> 在根目录下创建 <code>post/img/aa.jpg</code>,</p>
+<p>打包后会 <code>meta</code> 标签定义 <code>baseUrl='协议域名/项目名/'</code> 在根目录下创建 <code>post/img/test.jpg</code>,</p>
 
-<p>故部署后请求 <code>域名/项目名/post/img/aa.jpg</code></p>
+<p>故部署后请求 <code>域名/项目名/post/img/test.jpg</code></p>
 
-<p>如: <code>https://xn213.github.io/hugo-blog/post/img/aa.jpg</code></p>
+<p>如: <code>https://xn213.github.io/hugo-blog/post/img/test.jpg</code></p>
 </blockquote></li>
 </ol>
 
