@@ -6,10 +6,28 @@
     <description>Recent content in Categories on xn213</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2019 21:13:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 21:13:10 +0800</lastBuildDate>
     
 	<atom:link href="https://xn213.github.io/hugo-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端</title>
+      <link>https://xn213.github.io/hugo-blog/categories/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Sat, 03 Aug 2019 21:13:10 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/categories/%E5%89%8D%E7%AB%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>工程化</title>
+      <link>https://xn213.github.io/hugo-blog/categories/%E5%B7%A5%E7%A8%8B%E5%8C%96/</link>
+      <pubDate>Sat, 03 Aug 2019 21:13:10 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/categories/%E5%B7%A5%E7%A8%8B%E5%8C%96/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>资源</title>
