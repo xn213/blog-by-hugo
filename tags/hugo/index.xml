@@ -19,7 +19,7 @@
       <guid>https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/</guid>
       <description>使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
  一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&amp;frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
- 配置环境变量: 系统&amp;gt;高级系统设置&amp;gt;环境变量&amp;gt;系统变量&amp;gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到PATH编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
+ 配置环境变量: 系统&amp;gt;高级系统设置&amp;gt;环境变量&amp;gt;系统变量&amp;gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
   二. 创建  命令: hugo new site &amp;lt;项目名&amp;gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.</description>
     </item>
     

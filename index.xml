@@ -67,7 +67,7 @@ github 优质项目 frontend-tech-list  前端技术清单，不论你是正在�
       <guid>https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/</guid>
       <description>使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
  一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&amp;frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
- 配置环境变量: 系统&amp;gt;高级系统设置&amp;gt;环境变量&amp;gt;系统变量&amp;gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到PATH编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
+ 配置环境变量: 系统&amp;gt;高级系统设置&amp;gt;环境变量&amp;gt;系统变量&amp;gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
   二. 创建  命令: hugo new site &amp;lt;项目名&amp;gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.</description>
     </item>
     
@@ -143,7 +143,8 @@ js 异步加载的方式
       <pubDate>Mon, 13 Feb 2017 21:13:10 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</guid>
-      <description>前端遇到的问题及解决方案  input标签怎么才能只输入数字？   &amp;lt;!-- h5的标签属性 --&amp;gt; &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;  用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
+      <description>前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+&amp;lt;!-- h5的标签属性 --&amp;gt; &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &amp;lt;input type=&amp;quot;text&amp;quot; onkeypress=&amp;quot;return event.keyCode&amp;gt;=48&amp;amp;&amp;amp;event.keyCode&amp;lt;=57&amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot; /&amp;gt; &amp;lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; onkeyup=&amp;quot;value=value.replace(/[^\d]/g,&#39;&#39;) &amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;&amp;gt; &amp;lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;。 --&amp;gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &amp;quot;vetur.format.defaultFormatter.html&amp;quot;: &amp;quot;js-beautify-html&amp;quot;

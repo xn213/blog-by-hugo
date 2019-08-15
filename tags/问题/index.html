@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content=", vue, vuejs, nodejs, react, development">
 <meta name="description" content="xn213的小窝">
@@ -244,7 +244,8 @@
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        前端遇到的问题及解决方案  input标签怎么才能只输入数字？   &lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;  用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
+        前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+&lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,'') &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
