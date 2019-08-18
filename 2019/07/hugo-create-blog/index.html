@@ -378,6 +378,19 @@ git push -u origin master
 
 <p>如: <code>https://xn213.github.io/hugo-blog/post/img/test.jpg</code></p>
 </blockquote></li>
+
+<li><p>打包后静态资源路径问题:</p>
+
+<ul>
+<li>图片路径:</li>
+<li>缩略文章/ 文章内容 等用到的背景图 需放到主题文件夹下: <code>themes\hugo-tranquilpeak-theme\static\images</code></li>
+</ul>
+
+<ol>
+<li><p><code>\static\images</code> 里面的图片会打包到 打包文件根目录下的images中: <code>\public\images</code></p></li>
+
+<li><p><code>\content\post\img</code> =&gt; <code>\public\post\img</code></p></li>
+</ol></li>
 </ol>
 
               

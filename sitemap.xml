@@ -73,12 +73,12 @@
   </url>
   
   <url>
-    <loc>https://xn213.github.io/hugo-blog/tags/help/</loc>
+    <loc>https://xn213.github.io/hugo-blog/categories/help/</loc>
     <lastmod>2019-07-22T08:37:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xn213.github.io/hugo-blog/categories/help/</loc>
+    <loc>https://xn213.github.io/hugo-blog/tags/help/</loc>
     <lastmod>2019-07-22T08:37:10+08:00</lastmod>
   </url>
   
@@ -143,13 +143,38 @@
   </url>
   
   <url>
+    <loc>https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2018-11-28T01:21:13+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xn213.github.io/hugo-blog/tags/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2018-11-28T01:21:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2018-11-28T01:21:13+08:00</lastmod>
+    <loc>https://xn213.github.io/hugo-blog/2018/07/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-07-23T21:31:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <lastmod>2018-07-23T21:31:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-07-23T21:31:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-07-23T21:31:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/2018/07/%E6%8B%96%E5%BB%B6%E5%BF%83%E7%90%86%E5%AD%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-07-23T21:21:13+08:00</lastmod>
   </url>
   
   <url>
