@@ -207,6 +207,125 @@
 <article class="postShorten postShorten--thumbnailimg-top" itemscope itemType="http://schema.org/BlogPosting">
   <div class="postShorten-wrap">
     
+      <a href="https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/">
+        <div class="postShorten-thumbnailimg">
+          <img alt="" itemprop="image" src="https://xn213.github.io/hugo-blog/images/FE-Interview.png"/>
+        </div>
+      </a>
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/">
+          Js 面试题大搜罗
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2017-07-25T17:50:20&#43;08:00">
+        
+  July 25, 2017
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e9%9d%a2%e8%af%95">面试</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&quot;a&quot;, &quot;b&quot;] console.log(JSON.stringify(obj)); // {&quot;a&quot;:1,&quot;b&quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&quot;a&quot;, &quot;b&quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.
+      
+      <p>
+        <a href="https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-top" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+      <a href="https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/">
+        <div class="postShorten-thumbnailimg">
+          <img alt="" itemprop="image" src="https://xn213.github.io/hugo-blog/images/ES6-%E5%85%A5%E9%97%A8.png"/>
+        </div>
+      </a>
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/">
+          ES6 标准入门
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2017-02-25T19:23:20&#43;08:00">
+        
+  February 25, 2017
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/es6">ES6</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+for (let i = 0; i &lt; 10; i++) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
+变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
+let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = ['a'] x // &quot;a&quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a+b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。
+      
+      <p>
+        <a href="https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-top" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
       <a href="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
         <div class="postShorten-thumbnailimg">
           <img alt="" itemprop="image" src="https://xn213.github.io/hugo-blog/images/FE-Solutions.png"/>

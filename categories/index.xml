@@ -75,6 +75,15 @@
     </item>
     
     <item>
+      <title>Chrome</title>
+      <link>https://xn213.github.io/hugo-blog/categories/chrome/</link>
+      <pubDate>Wed, 13 Feb 2019 20:13:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/categories/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>面试</title>
       <link>https://xn213.github.io/hugo-blog/categories/%E9%9D%A2%E8%AF%95/</link>
       <pubDate>Wed, 28 Nov 2018 01:21:13 +0800</pubDate>
@@ -98,6 +107,15 @@
       <pubDate>Tue, 25 Jul 2017 21:13:32 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/categories/%E4%BB%A3%E7%A0%81%E6%AE%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ES6</title>
+      <link>https://xn213.github.io/hugo-blog/categories/es6/</link>
+      <pubDate>Sat, 25 Feb 2017 19:23:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/categories/es6/</guid>
       <description></description>
     </item>
     

@@ -7,50 +7,76 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
-<meta name="keywords" content="博客, 工具, hugo, vue, vuejs, nodejs, react, development">
-<meta name="description" content="使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
- 一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
- 配置环境变量: 系统&gt;高级系统设置&gt;环境变量&gt;系统变量&gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
-  二. 创建  命令: hugo new site &lt;项目名&gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.">
+<meta name="keywords" content="Chrome, 插件, 博客, 工具, hugo, vue, vuejs, nodejs, react, development">
+<meta name="description" content="Chrome Extension  vuetools
+ web前端助手: 
+  FeHelper，Chrome浏览器插件，包含一些前端实用的工具
+ chrome 跨域问题解决
+ Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
+ Vimium = Vim &#43; Chromium 超方便的快捷键  画词翻译:
+ google应用商店 下载.crx文件  Clear Cache
+ crxMouse Top Gestures
+ 拷贝为 Markdown
+ wappalyzer
+ JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
 
 
-<meta property="og:description" content="使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
- 一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
- 配置环境变量: 系统&gt;高级系统设置&gt;环境变量&gt;系统变量&gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
-  二. 创建  命令: hugo new site &lt;项目名&gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.">
+<meta property="og:description" content="Chrome Extension  vuetools
+ web前端助手: 
+  FeHelper，Chrome浏览器插件，包含一些前端实用的工具
+ chrome 跨域问题解决
+ Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
+ Vimium = Vim &#43; Chromium 超方便的快捷键  画词翻译:
+ google应用商店 下载.crx文件  Clear Cache
+ crxMouse Top Gestures
+ 拷贝为 Markdown
+ wappalyzer
+ JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hugo Create Blog">
-<meta name="twitter:title" content="Hugo Create Blog">
-<meta property="og:url" content="https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
-<meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+<meta property="og:title" content="Chrome Extensions">
+<meta name="twitter:title" content="Chrome Extensions">
+<meta property="og:url" content="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/">
+<meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/">
 <meta property="og:site_name" content="xn213">
-<meta property="og:description" content="使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
- 一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
- 配置环境变量: 系统&gt;高级系统设置&gt;环境变量&gt;系统变量&gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
-  二. 创建  命令: hugo new site &lt;项目名&gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.">
-<meta name="twitter:description" content="使用 hugo 创建博客  hugo 基于 go 语言, 相对于 hexo 步骤简单, 不易出错; hexo 需要安装很多依赖
- 一. 安装 hugo  OS : brew install hugo win : 下载 Hugo https://github.com/gohugoio/hugo/releases 下载 32&frasl;64 位   查看版本命令 hugo version window 需配置环境变量;(在安装路径下 打开命令行 输入也可以查看版本)
- 配置环境变量: 系统&gt;高级系统设置&gt;环境变量&gt;系统变量&gt;新建:变量名随意不冲突就行如 HUGO,变量值为 hugo.exe 所在的路径文件夹(不需写hugo.exe)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上;%刚才写的变量名%,如: ;%HUGO% , 注意前后分号;
-  二. 创建  命令: hugo new site &lt;项目名&gt; 快到你不敢相信 秒建  三. 主题  hugo 主题库 https://themes.">
+<meta property="og:description" content="Chrome Extension  vuetools
+ web前端助手: 
+  FeHelper，Chrome浏览器插件，包含一些前端实用的工具
+ chrome 跨域问题解决
+ Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
+ Vimium = Vim &#43; Chromium 超方便的快捷键  画词翻译:
+ google应用商店 下载.crx文件  Clear Cache
+ crxMouse Top Gestures
+ 拷贝为 Markdown
+ wappalyzer
+ JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
+<meta name="twitter:description" content="Chrome Extension  vuetools
+ web前端助手: 
+  FeHelper，Chrome浏览器插件，包含一些前端实用的工具
+ chrome 跨域问题解决
+ Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
+ Vimium = Vim &#43; Chromium 超方便的快捷键  画词翻译:
+ google应用商店 下载.crx文件  Clear Cache
+ crxMouse Top Gestures
+ 拷贝为 Markdown
+ wappalyzer
+ JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-07-20T17:23:20">
+    <meta property="article:published_time" content="2019-02-13T20:13:20">
   
   
-    <meta property="article:modified_time" content="2019-07-20T17:23:20">
+    <meta property="article:modified_time" content="2019-02-13T20:13:20">
   
-  
-  
-    
-      <meta property="article:section" content="技巧">
-    
   
   
     
-      <meta property="article:tag" content="博客工具">
+      <meta property="article:section" content="Chrome">
     
-      <meta property="article:tag" content="hugo">
+  
+  
+    
+      <meta property="article:tag" content="Chrome">
     
   
 
@@ -63,12 +89,12 @@
 
 
 
-  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/Hugo-Create-Blog.png">
-  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/Hugo-Create-Blog.png">
+  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/Chrome-Extensions.png">
+  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/Chrome-Extensions.png">
 
 
-  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/ruoxiyy.jpg">
-  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/ruoxiyy.jpg">
+  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/title-cover.png">
+  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/title-cover.png">
 
 
 
@@ -77,14 +103,14 @@
   <meta property="twitter:image" content="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80">
 
 
-    <title>Hugo Create Blog</title>
+    <title>Chrome Extensions</title>
 
     <link rel="icon" href="https://xn213.github.io/hugo-blog/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/">
+    <link rel="canonical" href="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -226,21 +252,21 @@
   <div class="post-header-cover
               text-left
               post-header-cover--full"
-       style="background-image:url('/hugo-blog/images/ruoxiyy.jpg')"
+       style="background-image:url('/hugo-blog/images/title-cover.png')"
        data-behavior="5">
     
       <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Hugo Create Blog
+      Chrome Extensions
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-07-20T17:23:20&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-02-13T20:13:20&#43;08:00">
         
-  July 20, 2019
+  February 13, 2019
 
       </time>
     
@@ -249,7 +275,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e6%8a%80%e5%b7%a7">技巧</a>
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/chrome">Chrome</a>
     
   
 
@@ -266,133 +292,72 @@
                hasCoverCaption">
         <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
-            <span class="post-header-cover-caption caption">hugo 创建博客</span>
+            <span class="post-header-cover-caption caption">ES6</span>
           
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               
 
-<h1 id="使用-hugo-创建博客">使用 <code>hugo</code> 创建博客</h1>
-
-<blockquote>
-<p><code>hugo</code> 基于 <code>go</code> 语言, 相对于 <code>hexo</code> 步骤简单, 不易出错; <code>hexo</code> 需要安装很多依赖</p>
-</blockquote>
-
-<h2 id="一-安装-hugo">一. 安装 <code>hugo</code></h2>
-
-<ol>
-<li>OS : <code>brew install hugo</code></li>
-<li>win : <a href="https://github.com/gohugoio/hugo/releases">下载 Hugo https://github.com/gohugoio/hugo/releases</a> 下载 <sup>32</sup>&frasl;<sub>64</sub> 位</li>
-</ol>
-
-<blockquote>
-<p>查看版本命令 <code>hugo version</code>
-window 需配置环境变量;(<del>在安装路径下 打开命令行 输入也可以查看版本</del>)</p>
-
-<blockquote>
-<p>配置环境变量: 系统&gt;高级系统设置&gt;环境变量&gt;系统变量&gt;新建:变量名随意不冲突就行如 <code>HUGO</code>,变量值为 hugo.exe 所在的路径文件夹(<strong>不需写hugo.exe</strong>)确定,然后找到用户变量 PATH 编辑, 在变量值最后加上<code>;%刚才写的变量名%</code>,如: <code>;%HUGO%</code> , 注意前后分号;</p>
-</blockquote>
-</blockquote>
-
-<h2 id="二-创建">二. 创建</h2>
-
-<ol>
-<li>命令: <code>hugo new site &lt;项目名&gt;</code></li>
-<li>快到你不敢相信 秒建</li>
-</ol>
-
-<h2 id="三-主题">三. 主题</h2>
-
-<ol>
-<li><a href="https://themes.gohugo.io">hugo 主题库 https://themes.gohugo.io</a>
-<br /></li>
-</ol>
-
-<blockquote>
-<p>本博使用主题: <code>hugo-tranquilpeak-theme</code></p>
-</blockquote>
-
-<ol>
-<li>项目目录下, 下载主题:
-<code>git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c</code></li>
-</ol>
-
-<h2 id="四-启动">四. 启动</h2>
-
-<ol>
-<li><p>命令:</p>
-
-<pre><code class="language-bash"># -t 指定主题: m10c
-hugo server -t m10c --buildDrafts
-# Web Server is available at http://localhost:1313
-</code></pre></li>
-</ol>
-
-<h2 id="五-写博客">五. 写博客</h2>
-
-<ol>
-<li><p>新建博客(.md)命令:</p>
-
-<pre><code class="language-bash"># 项目目录下执行命令, 会在 content/post/first-blog.md
-hugo new post/first-blog.md
-</code></pre></li>
-</ol>
-
-<h2 id="六-部署到-github">六. 部署到 github</h2>
-
-<ol>
-<li><p>使用主题打包命令:</p>
-
-<pre><code class="language-bash"># 首先打包, 生成 public
-# --themes=hugo-tranquilpeak-theme 指定主题 --baseUrl=&quot;部署地址&quot; --buildDrafts build
-hugo --theme=hugo-tranquilpeak-theme --baseUrl=&quot;https://xn213.github.io/hugo-blog&quot;
-
-# 进入 public  使用 git push 到 github
-git init
-git add .
-git commit -m '第一次提交 hugo 创建的博客'
-# 本地关联远端
-git remote add origin https://github.com/xn213/hugo-blog.git
-git push -u origin master
-</code></pre></li>
-</ol>
-
-<h2 id="填坑之路">填坑之路</h2>
-
-<ol>
-<li><p>.md 中引用本地图片部署后路径问题:</p>
-
-<p>图片路径: <code>content/post/img/test.jpg</code></p>
-
-<p>图片使用: <code>![test.jpg](/post/img/test.jpg)</code>
-         <code>&lt;img src=&quot;/post/img/test.jpg&quot; width=&quot;50%&quot; /&gt;</code>
-         <code>&lt;video src='https://xn213.github.io/hugo-blog/post/img/test.mp4' controls=&quot;controls&quot;&gt;&lt;/video&gt;</code></p>
-
-<blockquote>
-<p><code>hugo new post/first-blog.md</code> 创建路径为 <code>content/post/first-blog.md</code></p>
-
-<p>打包后会 <code>meta</code> 标签定义 <code>baseUrl='协议域名/项目名/'</code> 在根目录下创建 <code>post/img/test.jpg</code>,</p>
-
-<p>故部署后请求 <code>域名/项目名/post/img/test.jpg</code></p>
-
-<p>如: <code>https://xn213.github.io/hugo-blog/post/img/test.jpg</code></p>
-</blockquote></li>
-
-<li><p>打包后静态资源路径问题:</p>
+<h1 id="chrome-extension">Chrome Extension</h1>
 
 <ul>
-<li>图片路径:</li>
+<li><p>vuetools</p></li>
+
+<li><p><a href="https://www.baidufe.com/fehelper">web前端助手: </a></p></li>
 </ul>
 
-<ol>
-<li><p>缩略文章/ 文章内容 等用到的背景图 需放到主题文件夹下: <code>themes\hugo-tranquilpeak-theme\static\images</code></p></li>
+<p>FeHelper，Chrome浏览器插件，包含一些前端实用的工具</p>
 
-<li><p><code>\static\images</code> 里面的图片会打包到 打包文件根目录下的images中: <code>\public\images</code></p></li>
+<ul>
+<li><p>chrome 跨域问题解决</p>
 
-<li><p><code>\content\post\img</code> =&gt; <code>\public\post\img</code></p></li>
-</ol></li>
-</ol>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/nlfbmbojpeacfghkpbjhddihlkkiljbi">Allow-Control-Allow-Origin</a></li>
+<li><a href="https://173app.com/search?q=Allow%20CORS:%20Access-Control-Allow-Origin&amp;type=ext">Allow CORS: Access-Control-Allow-Origin 下载</a></li>
+</ul></li>
+
+<li><p>Vimium: 键盘操作更便捷</p>
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/search/Vimium">Vimium = Vim + Chromium 超方便的快捷键</a></li>
+</ul></li>
+
+<li><p>画词翻译:</p>
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/ikhdkkncnoglghljlkmcimlnlhkeamad">google应用商店</a></li>
+<li><a href="https://github.com/Selection-Translator/crx-selection-translate/releases/latest">下载.crx文件</a></li>
+</ul></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/cppjkneekbjaeellbfkmgnhonkkjfpdn">Clear Cache</a></p></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/jlgkpaicikihijadgifklkbpdajbkhjo">crxMouse Top Gestures</a></p></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/dgoenpnkphkichnohepecnmpmihnabdg">拷贝为 Markdown</a></p></li>
+
+<li><p><a href="https://www.wappalyzer.com/">wappalyzer</a></p></li>
+
+<li><p><a href="https://github.com/tulios/json-viewer">JSON Viewer: </a>
+The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.</p></li>
+
+<li><p><a href="https://github.com/ovity/octotree">Octotree: </a>
+Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a code tree on GitHub.</p></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">ABP: Adblock Plus - 的免费广告拦截程序</a></p></li>
+
+<li><p><a href="https://github.com/LuisReinoso/git-history-browser-extension">Git History: </a>Git History Browser Extension</p></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/lecdifefmmfjnjjinhaennhdlmcaeeeb">掘金</a></p></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/gokgophibdidjjpildcdbfpmcahilaaf">下载+</a></p></li>
+
+<li><p><a href="https://chrome.google.com/webstore/detail/mbniclmhobmnbdlbpiphghaielnnpgdp">Lightshot(截图工具)</a></p></li>
+
+<li><p>点点影视VIP视频解析</p></li>
+
+<li><p><a href="https://www.gwdang.com/">购物党自动比价工具</a></p></li>
+</ul>
 
               
             </div>
@@ -405,9 +370,7 @@ git push -u origin master
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/%E5%8D%9A%E5%AE%A2%E5%B7%A5%E5%85%B7/">博客工具</a>
-
-  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/hugo/">hugo</a>
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/chrome/">Chrome</a>
 
                   </div>
                 
@@ -420,7 +383,7 @@ git push -u origin master
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/07/%E7%A4%BE%E4%BC%9A%E6%B1%82%E5%8A%A9-%E5%BC%A0%E5%A4%A9%E5%AA%9B%E6%82%A3%E7%99%BD%E8%A1%80%E7%97%85%E5%AF%BB%E6%89%BE%E4%BA%B2%E7%94%9F%E7%88%B6%E6%AF%8D/" data-tooltip="社会求助: 张天媛患白血病寻找亲生父母">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -428,7 +391,7 @@ git push -u origin master
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/" data-tooltip="Hexo Create Blog">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/" data-tooltip="Fe Interview Czbk">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -446,19 +409,19 @@ git push -u origin master
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -506,7 +469,7 @@ git push -u origin master
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/07/%E7%A4%BE%E4%BC%9A%E6%B1%82%E5%8A%A9-%E5%BC%A0%E5%A4%A9%E5%AA%9B%E6%82%A3%E7%99%BD%E8%A1%80%E7%97%85%E5%AF%BB%E6%89%BE%E4%BA%B2%E7%94%9F%E7%88%B6%E6%AF%8D/" data-tooltip="社会求助: 张天媛患白血病寻找亲生父母">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -514,7 +477,7 @@ git push -u origin master
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/" data-tooltip="Hexo Create Blog">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/" data-tooltip="Fe Interview Czbk">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -532,19 +495,19 @@ git push -u origin master
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/07/hugo-create-blog/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -574,19 +537,19 @@ git push -u origin master
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F%29">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F02%2Fchrome-extensions%2F%29">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F%29">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F02%2Fchrome-extensions%2F%29">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F07%2Fhugo-create-blog%2F%29">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F02%2Fchrome-extensions%2F%29">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -678,9 +641,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/xn213.github.io\/hugo-blog\/2019\/07\/hugo-create-blog\/';
+          this.page.url = 'https:\/\/xn213.github.io\/hugo-blog\/2019\/02\/chrome-extensions\/';
           
-            this.page.identifier = '\/2019\/07\/hugo-create-blog\/'
+            this.page.identifier = '\/2019\/02\/chrome-extensions\/'
           
         };
         (function() {

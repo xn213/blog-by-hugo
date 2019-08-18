@@ -93,6 +93,25 @@ github 优质项目 frontend-tech-list  前端技术清单，不论你是正在�
     </item>
     
     <item>
+      <title>Chrome Extensions</title>
+      <link>https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/</link>
+      <pubDate>Wed, 13 Feb 2019 20:13:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/</guid>
+      <description>Chrome Extension  vuetools
+ web前端助手: 
+  FeHelper，Chrome浏览器插件，包含一些前端实用的工具
+ chrome 跨域问题解决
+ Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
+ Vimium = Vim + Chromium 超方便的快捷键  画词翻译:
+ google应用商店 下载.crx文件  Clear Cache
+ crxMouse Top Gestures
+ 拷贝为 Markdown
+ wappalyzer
+ JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.</description>
+    </item>
+    
+    <item>
       <title>Fe Interview Czbk</title>
       <link>https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/</link>
       <pubDate>Wed, 28 Nov 2018 01:21:13 +0800</pubDate>
@@ -173,6 +192,18 @@ js 异步加载的方式
       
       <guid>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</guid>
       <description>js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] console.log(JSON.stringify(obj)); // {&amp;quot;a&amp;quot;:1,&amp;quot;b&amp;quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.</description>
+    </item>
+    
+    <item>
+      <title>ES6 标准入门</title>
+      <link>https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sat, 25 Feb 2017 19:23:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/</guid>
+      <description>let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+for (let i = 0; i &amp;lt; 10; i++) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
+变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
+let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = [&#39;a&#39;] x // &amp;quot;a&amp;quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a+b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。</description>
     </item>
     
     <item>
