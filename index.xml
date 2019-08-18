@@ -100,12 +100,11 @@ github 优质项目 frontend-tech-list  前端技术清单，不论你是正在�
       <guid>https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/</guid>
       <description>Chrome Extension  vuetools
  web前端助手: 
-  FeHelper，Chrome浏览器插件，包含一些前端实用的工具
- chrome 跨域问题解决
+ FeHelper，Chrome浏览器插件，包含一些前端实用的工具  chrome 跨域问题解决
  Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
  Vimium = Vim + Chromium 超方便的快捷键  画词翻译:
- google应用商店 下载.crx文件  Clear Cache
- crxMouse Top Gestures
+ google应用商店 下载.crx文件  crxMouse Top Gestures
+ Clear Cache
  拷贝为 Markdown
  wappalyzer
  JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.</description>
