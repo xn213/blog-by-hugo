@@ -242,7 +242,8 @@
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&quot;a&quot;, &quot;b&quot;] console.log(JSON.stringify(obj)); // {&quot;a&quot;:1,&quot;b&quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&quot;a&quot;, &quot;b&quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.
+        js 面试题搜罗, 一些代码段
+js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&quot;a&quot;, &quot;b&quot;] console.log(JSON.stringify(obj)); // {&quot;a&quot;:1,&quot;b&quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&quot;a&quot;, &quot;b&quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.
       
       <p>
         <a href="https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/" class="postShorten-excerpt_link link">Continue reading</a>
@@ -300,7 +301,8 @@
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+        一些 ES6 标准
+let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
 for (let i = 0; i &lt; 10; i++) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
 变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
 let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = ['a'] x // &quot;a&quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a+b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。
@@ -361,7 +363,8 @@ let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+        前端遇到的问题及解决方案
+ input标签怎么才能只输入数字？
 &lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,'') &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
@@ -425,7 +428,8 @@ let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        移动端页面开发资源总结 移动端页面开发资源总结及技巧 工作了有一段时间，基本上都在搞移动端的前端开发，工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
+        移动端页面开发资源总结及技巧
+工作的过程中遇到过很多问题，bug的解决方案，记录下来，以便后用！！！内容并不是很全，以后每遇到一个问题都会总结在这里，分享给大家！
 一、meta标签相关知识 1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。
 &lt;meta name=&quot;viewport&quot; content=&quot;width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;  3、禁止将页面中的数字识别为电话号码

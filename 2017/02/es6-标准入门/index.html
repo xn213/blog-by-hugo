@@ -8,13 +8,15 @@
 <meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="ES6, 博客, 工具, hugo, vue, vuejs, nodejs, react, development">
-<meta name="description" content="let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+<meta name="description" content="一些 ES6 标准
+let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
 for (let i = 0; i &lt; 10; i&#43;&#43;) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
 变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
 let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = [&#39;a&#39;] x // &quot;a&quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a&#43;b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。">
 
 
-<meta property="og:description" content="let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+<meta property="og:description" content="一些 ES6 标准
+let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
 for (let i = 0; i &lt; 10; i&#43;&#43;) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
 变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
 let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = [&#39;a&#39;] x // &quot;a&quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a&#43;b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。">
@@ -24,11 +26,13 @@ let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,
 <meta property="og:url" content="https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/">
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2017/02/es6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8/">
 <meta property="og:site_name" content="xn213">
-<meta property="og:description" content="let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+<meta property="og:description" content="一些 ES6 标准
+let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
 for (let i = 0; i &lt; 10; i&#43;&#43;) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
 变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
 let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = [&#39;a&#39;] x // &quot;a&quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a&#43;b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。">
-<meta name="twitter:description" content="let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
+<meta name="twitter:description" content="一些 ES6 标准
+let 和 const 命令 let let 声明的变量只在所在的代码块中有效。 let 不存在变量提升，，一定要先声明后使用（暂时性死区）。 let 实际上为 js 新增了块级作用域，外层作用域无法读取内层作用域的变量。块级作用域的出现使得立即执行表达式不再必要了。 es5 规定函数不能在块级作用域定义，但是 es6 允许在其中声明函数，但应该尽量避免，而是使用函数表达式。
 for (let i = 0; i &lt; 10; i&#43;&#43;) { // ... } console.log(i) // ReferenceError: i is not defined  const const 声明一个只读变量，一旦声明不可变。作用域和 let 相同
 变量的解构赋值 数组解构赋值 按照『模式匹配』从数组和对象中抽取值。
 let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,4] let [x,y, ...z] = [&#39;a&#39;] x // &quot;a&quot; y // undefined, 解构不成功变量的值就是 undefined z // [] // 不完全解构也可以成功。事实上，只要具备 Iterator 接口，都可以用数组形式解构赋值 let [x,y]=[1,2,3] x //1 y //2  function* fibs() { let a=0; let b=1; while (true) { yield a; [a,b] = [b, a&#43;b]; } }  // es6 内部使用严格相等运算符 === let [x=1] = [undefined]; x //1 let [x=1] = [null] x //null，以为 null 不是严格等于 undefined，所以可以被赋值  注意如果默认值是一个表达式，他是惰性求值的。">
@@ -270,6 +274,8 @@ let [a, b, c] = [1,2,3]; let [head, ...tail] = [1,2,3,4] head // 1 tail // [2,3,
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               
+
+<p>一些 ES6 标准</p>
 
 <h2 id="let-和-const-命令">let 和 const 命令</h2>
 

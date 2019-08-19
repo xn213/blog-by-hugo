@@ -8,7 +8,8 @@
 <meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="前端, 前端问题, 解决方案, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
-<meta name="description" content="前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+<meta name="description" content="前端遇到的问题及解决方案
+ input标签怎么才能只输入数字？
 &lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
@@ -17,7 +18,8 @@
 ↑ back to top">
 
 
-<meta property="og:description" content="前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+<meta property="og:description" content="前端遇到的问题及解决方案
+ input标签怎么才能只输入数字？
 &lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
@@ -30,14 +32,16 @@
 <meta property="og:url" content="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
 <meta property="og:site_name" content="xn213">
-<meta property="og:description" content="前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+<meta property="og:description" content="前端遇到的问题及解决方案
+ input标签怎么才能只输入数字？
 &lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
 3、搞定 : 格式化快捷键：Alt&#43;Shift&#43;F
 ↑ back to top">
-<meta name="twitter:description" content="前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+<meta name="twitter:description" content="前端遇到的问题及解决方案
+ input标签怎么才能只输入数字？
 &lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
@@ -285,9 +289,7 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              
-
-<h1 id="前端遇到的问题及解决方案">前端遇到的问题及解决方案</h1>
+              <p>前端遇到的问题及解决方案</p>
 
 <ol>
 <li><p>input标签怎么才能只输入数字？</p>

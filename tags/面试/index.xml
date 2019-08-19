@@ -17,8 +17,8 @@
       <pubDate>Wed, 28 Nov 2018 01:21:13 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/</guid>
-      <description>web前端高频面试试题含答案 - 传智播客 本文是根据多份关于web前端面试试题抽取的企业面试时用到最多的一些试题，仅供参考。
-怎么去设计一个组件封装？
+      <description>本文是根据多份关于web前端面试试题抽取的企业面试时用到最多的一些试题，仅供参考。
+web前端高频面试试题含答案 - 传智播客 怎么去设计一个组件封装？
  组件封装的目的是为了重用，提高开发效率和代码质量
   　2.低耦合，单一职责，可复用性，可维护性
 　3.前端组件化设计思路
@@ -34,6 +34,16 @@ js 异步加载的方式
  xss 跨站脚本攻击，主要是前端层面的，用户在输入层面插入攻击脚本，改变页面的显示，或则窃取网站 cookie，预防方法：不相信用户的所有操作，对用户输入进行一个转义，不允许 js 对 cookie 的读写
  csrf 跨站请求伪造，以你的名义，发送恶意请求，通过 cookie 加参数等形式过滤
  我们没法彻底杜绝攻击，只能提高攻击门槛</description>
+    </item>
+    
+    <item>
+      <title>Js 面试题大搜罗</title>
+      <link>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</link>
+      <pubDate>Tue, 25 Jul 2017 17:50:20 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2017/07/js-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%A4%A7%E6%90%9C%E7%BD%97/</guid>
+      <description>js 面试题搜罗, 一些代码段
+js 面试题搜罗 ES6 /////////////////////////////// // from page-82 // try-p82-keys var obj ={ a:1, b:2, }; Object.setPrototypeOf(obj,{ c:3, }); console.log(Object.keys(obj)); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] console.log(JSON.stringify(obj)); // {&amp;quot;a&amp;quot;:1,&amp;quot;b&amp;quot;:2} var keys1 =[]; for(let key in obj)keys1.push(key); console.log(keys1); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;] var keys2 =[]; for(let key in Object.assign({},obj))keys2.push(key); console.log(keys2); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] ///////////////////////////////  逻辑 /////////////////////////////// // 逻辑 a=1 b=2 不使用第三个变了量交换a,b // var a = 1, b = 2; // // 最牛逼的 // a = [b,b=a][0] // 0使用临时变量 - low // var t = a // a = b // b = t // 1 // a = a + b // b = a - b // a = a - b // 2-1 // a = a^b //a^=b // b = b^a //b^=a // a = a^b //a^=b // 2-2 // a = (b^=a^=b)^a; // 3 // a = {a: b,b: a} // b = a.</description>
     </item>
     
   </channel>

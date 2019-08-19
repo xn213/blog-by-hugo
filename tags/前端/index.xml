@@ -17,8 +17,8 @@
       <pubDate>Wed, 28 Nov 2018 01:21:13 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/</guid>
-      <description>web前端高频面试试题含答案 - 传智播客 本文是根据多份关于web前端面试试题抽取的企业面试时用到最多的一些试题，仅供参考。
-怎么去设计一个组件封装？
+      <description>本文是根据多份关于web前端面试试题抽取的企业面试时用到最多的一些试题，仅供参考。
+web前端高频面试试题含答案 - 传智播客 怎么去设计一个组件封装？
  组件封装的目的是为了重用，提高开发效率和代码质量
   　2.低耦合，单一职责，可复用性，可维护性
 　3.前端组件化设计思路
@@ -42,7 +42,8 @@ js 异步加载的方式
       <pubDate>Mon, 13 Feb 2017 21:13:10 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</guid>
-      <description>前端遇到的问题及解决方案  input标签怎么才能只输入数字？
+      <description>前端遇到的问题及解决方案
+ input标签怎么才能只输入数字？
 &amp;lt;!-- h5的标签属性 --&amp;gt; &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
 &amp;lt;input type=&amp;quot;text&amp;quot; onkeypress=&amp;quot;return event.keyCode&amp;gt;=48&amp;amp;&amp;amp;event.keyCode&amp;lt;=57&amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot; /&amp;gt; &amp;lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; onkeyup=&amp;quot;value=value.replace(/[^\d]/g,&#39;&#39;) &amp;quot; ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;&amp;gt; &amp;lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&amp;quot;/[^a-zA-Z]/&amp;quot;。 --&amp;gt;  ↑ back to top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
