@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>插件 on xn213</title>
-    <link>https://xn213.github.io/hugo-blog/tags/%E6%8F%92%E4%BB%B6/</link>
-    <description>Recent content in 插件 on xn213</description>
+    <title>VSCode on xn213</title>
+    <link>https://xn213.github.io/hugo-blog/tags/vscode/</link>
+    <description>Recent content in VSCode on xn213</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Feb 2019 20:13:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 21:52:13 +0800</lastBuildDate>
     
-	<atom:link href="https://xn213.github.io/hugo-blog/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xn213.github.io/hugo-blog/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Chrome Extensions</title>
-      <link>https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/</link>
-      <pubDate>Wed, 13 Feb 2019 20:13:20 +0800</pubDate>
-      
-      <guid>https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/</guid>
-      <description>自用谷歌浏览器插件 - 持续更新
-Chrome Extension  vuetools
- web前端助手: 
- FeHelper，Chrome浏览器插件，包含一些前端实用的工具  chrome 跨域问题解决
- Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
- Vimium = Vim + Chromium 超方便的快捷键   画词翻译:
- google应用商店 下载.crx文件  crxMouse Top Gestures
- Clear Cache
- 拷贝为 Markdown
- wappalyzer
- JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.</description>
-    </item>
     
     <item>
       <title>VSCode Extensions</title>
