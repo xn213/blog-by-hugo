@@ -390,7 +390,29 @@ git push -u origin master
 
 <li><p><code>\content\post\img</code> =&gt; <code>\public\post\img</code></p></li>
 </ol></li>
+
+<li><p>一键部署(git 配置好 SSH )</p></li>
 </ol>
+
+<p>部署命令文件代码: (根据每次修改内容修改 git commit 的内容)</p>
+
+<pre><code class="language-sh"># /deploy.sh 部署命令 文件代码
+# test 自动部署
+# 确保脚本 遇到的错误 停止
+set -e
+
+# 打包博客
+hugo --theme=hugo-tranquilpeak-theme --baseUrl=&quot;https://xn213.github.io/hugo-blog&quot;
+
+cd public
+
+git add .
+
+# :sunny::four_leaf_clover::love_letter::heart_eyes::revolving_hearts:
+git commit -m 'updated ruoxiyy:喝杯小酒.. :revolving_hearts: &amp; 酷狗musicUrl lost &amp; test audios controls'
+
+git push
+</code></pre>
 
               
             </div>

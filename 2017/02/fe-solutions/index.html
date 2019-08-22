@@ -8,46 +8,42 @@
 <meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="前端, 前端问题, 解决方案, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
-<meta name="description" content="前端遇到的问题及解决方案
- input标签怎么才能只输入数字？
-&lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
-&lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
+<meta name="description" content="前端遇到的问题及解决方案:
+ 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
 3、搞定 : 格式化快捷键：Alt&#43;Shift&#43;F
-↑ back to top">
+↑ Back to Top">
 
 
-<meta property="og:description" content="前端遇到的问题及解决方案
- input标签怎么才能只输入数字？
-&lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
-&lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
+<meta property="og:description" content="前端遇到的问题及解决方案:
+ 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
 3、搞定 : 格式化快捷键：Alt&#43;Shift&#43;F
-↑ back to top">
+↑ Back to Top">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fe Solutions">
 <meta name="twitter:title" content="Fe Solutions">
 <meta property="og:url" content="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
 <meta property="og:site_name" content="xn213">
-<meta property="og:description" content="前端遇到的问题及解决方案
- input标签怎么才能只输入数字？
-&lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
-&lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
+<meta property="og:description" content="前端遇到的问题及解决方案:
+ 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
 3、搞定 : 格式化快捷键：Alt&#43;Shift&#43;F
-↑ back to top">
-<meta name="twitter:description" content="前端遇到的问题及解决方案
- input标签怎么才能只输入数字？
-&lt;!-- h5的标签属性 --&gt; &lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;   用谷歌试了一下，的确行。可是问题来了。用 ie 浏览器，火狐就不买账了，出现了兼容问题，想了很久，百度了一下，找到一个比较靠谱的方法。
-&lt;input type=&quot;text&quot; onkeypress=&quot;return event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57&quot; ng-pattern=&quot;/[^a-zA-Z]/&quot; /&gt; &lt;!-- 通过onkeyup事件是输上后再去掉非数字字符 --&gt; &lt;input type=&quot;text&quot; onkeyup=&quot;value=value.replace(/[^\d]/g,&#39;&#39;) &quot; ng-pattern=&quot;/[^a-zA-Z]/&quot;&gt; &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;  ↑ back to top
+↑ Back to Top">
+<meta name="twitter:description" content="前端遇到的问题及解决方案:
+ 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
 3、搞定 : 格式化快捷键：Alt&#43;Shift&#43;F
-↑ back to top">
+↑ Back to Top">
 <meta property="og:locale" content="en-us">
 
   
@@ -289,7 +285,44 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>前端遇到的问题及解决方案</p>
+              <p>前端遇到的问题及解决方案:</p>
+
+<ol>
+<li><p>页面多个音频 <code>audio</code> 只允许播放一个 js 解决方案: (<code>video</code> 同理)</p>
+
+<pre><code class="language-js">const audios = document.getElementsByTagName(&quot;audio&quot;);
+// 暂停函数
+function pauseAll() {
+let self = this;
+[].forEach.call(audios, function (i) {
+// 将audios中其他的audio全部暂停
+i !== self &amp;&amp; i.pause();
+})
+}
+// 给play事件绑定暂停函数
+[].forEach.call(audios, function (i) {
+i.addEventListener(&quot;play&quot;, pauseAll.bind(i));
+});
+</code></pre></li>
+</ol>
+
+<p><a href="#前端遇到的问题及解决方案">↑ Back to Top</a></p>
+
+<hr />
+
+<ol>
+<li>Vscode 格式化 vue Template 代码段</li>
+</ol>
+
+<p>1、安装 <code>vetur</code></p>
+
+<p>2、在 <code>User Setting</code> 中增加设置: <code>&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;</code></p>
+
+<p>3、搞定 : 格式化快捷键：<code>Alt+Shift+F</code></p>
+
+<p><a href="#前端遇到的问题及解决方案">↑ Back to Top</a></p>
+
+<hr />
 
 <ol>
 <li><p>input标签怎么才能只输入数字？</p>
@@ -310,23 +343,7 @@
 &lt;!-- 加上正则匹配不能输入非数字字符ng-pattern=&quot;/[^a-zA-Z]/&quot;。 --&gt;
 </code></pre>
 
-<p><a href="#前端遇到的问题及解决方案">↑ back to top</a></p>
-
-<hr />
-
-<ol>
-<li>Vscode 格式化 vue Template 代码段</li>
-</ol>
-
-<p>1、安装 <code>vetur</code></p>
-
-<p>2、在 <code>User Setting</code> 中增加设置: <code>&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;</code></p>
-
-<p>3、搞定 : 格式化快捷键：<code>Alt+Shift+F</code></p>
-
-<p><a href="#前端遇到的问题及解决方案">↑ back to top</a></p>
-
-<hr />
+<p><a href="#前端遇到的问题及解决方案">↑ Back to Top</a></p>
 
               
             </div>
