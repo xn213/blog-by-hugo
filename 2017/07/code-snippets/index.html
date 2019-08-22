@@ -330,6 +330,68 @@ function isFunction(arg) {
 }
 </code></pre>
 
+<p><a href="#code-snippets">↑ Back to Top</a></p>
+
+<h3 id="深度克隆函数-deepclone">深度克隆函数 deepClone</h3>
+
+<pre><code class="language-js">function deepClone(obj) {
+  var _toString = Object.prototype.toString;
+
+  // null, undefined, non-object, function
+  if (!obj || typeof obj !== 'object') {
+    return obj;
+  }
+
+  // DOM Node
+  if (obj.nodeType &amp;&amp; 'cloneNode' in obj) {
+    return obj.cloneNode(true);
+  }
+
+  // Date
+  if (_toString.call(obj) === '[object Date]') {
+    return new Date(obj.getTime());
+  }
+
+  // RegExp
+  if (_toString.call(obj) === '[object RegExp]') {
+    var flags = [];
+    if (obj.global) { flags.push('g'); }
+    if (obj.multiline) { flags.push('m'); }
+    if (obj.ignoreCase) { flags.push('i'); }
+
+    return new RegExp(obj.source, flags.join(''));
+  }
+
+  var result = Array.isArray(obj) ? [] :
+    obj.constructor ? new obj.constructor() : {};
+
+  for (var key in obj ) {
+    result[key] = deepClone(obj[key]);
+  }
+
+  return result;
+}
+
+function A() {
+  this.a = a;
+}
+
+var a = {
+  name: 'qiu',
+  birth: new Date(),
+  pattern: /qiu/gim,
+  container: document.body,
+  hobbys: ['book', new Date(), /aaa/gim, 111]
+};
+
+var c = new A();
+var b = deepClone(c);
+console.log(c.a === b.a);
+console.log(c, b);
+</code></pre>
+
+<p><a href="#code-snippets">↑ Back to Top</a></p>
+
 <h3 id="编写一个函数接受-url-中-query-string-为参数-返回解析后的-object-query-string-使用-application-x-www-form-urlencoded-编码">编写一个函数接受 url 中 query string 为参数,返回解析后的 Object,query string 使用 application/x-www-form-urlencoded 编码</h3>
 
 <pre><code class="language-js">/**
