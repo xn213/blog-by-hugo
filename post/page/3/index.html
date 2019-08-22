@@ -244,8 +244,9 @@
       
         一些常用的代码块,
 Code Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === 'object' } //  ↑ Back to Top
-// 费波拉希数列 function fib(n) { return function(n, a, b) { return n &gt; 0 ? arguments.callee(n - 1, b, a + b) : a; } (n, 0, 1); } //  ↑ Back to Top
-// 第 114 题：编程题，找出字符串中连续出现最多的字符和个数 // 'abcaakjbb' =&gt; {'a':2,'b':2} // 'abbkejsbcccwqaa' =&gt; {'c':3} const arr = str.
+如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断
+/** * 判断一个对象是否是数组，参数不是对象或者不是数组，返回false * * @param {Object} arg 需要测试是否为数组的对象 * @return {Boolean} 传入参数是数组返回true，否则返回false */ function isArray(arg) { if (typeof arg === 'object') { return Object.prototype.toString.call(arg) === '[object Array]'; } return false; }  ↑ Back to Top
+如何判断一个对象是否为函数 /** * 判断对象是否为函数，如果当前运行环境对可调用对象（如正则表达式） * 的typeof返回'function'，采用通用方法，否则采用优化方法 * * @param {Any} arg 需要检测是否为函数的对象 * @return {boolean} 如果参数是函数，返回true，否则false */ function isFunction(arg) { if (arg) { if (typeof (/.
       
       <p>
         <a href="https://xn213.github.io/hugo-blog/2017/07/code-snippets/" class="postShorten-excerpt_link link">Continue reading</a>
