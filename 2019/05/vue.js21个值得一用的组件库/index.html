@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="author" content="xn213">
+<meta name="keywords" content="Vue.js, 插件, 组件库, 轮子, vue, vuejs, nodejs, react, development">
+<meta name="description" content="【Vue.js】21个值得一用的组件库 Nuxt.js Vue的服务器端渲染框架，解决客户端渲染的诸多问题。（首页载入慢，SEO等）
+https://nuxtjs.org/
+Vuetify vue的UI/UX框架，除Bootstrap外的选择。
+https://vuetifyjs.com/
+eslint-plugin-vue vue的文法校验工具，可以快速找出代码、指令、样式单中的问题，同时还可以集成到VSCode, Sublime, Atom等IDE中。
+https://eslint.vuejs.org/
+vue-lazyload 图片懒装载处理组件。
+https://github.com/hilongjw/vue-lazyload
+axios HTTP通信组件，可以远程存取各种REST-API服务。
+https://github.com/axios/axios
+vue-typer 内容显示的打字机组件。
+https://github.com/cngu/vue-typer
+vue-chartjs Chart.js库的vue实现，可以完成网页中的图表显示。
+https://vue-chartjs.org/
+演示: http://demo.vue-chartjs.org/ vue-fa FontAwesome5库的vue实现，可以调用FontAwesome5的各种组件。
+https://cweili.github.io/vue-fa/
+vee-validate 基于模板的vue校验框架。
+https://baianat.github.io/vee-validate/
+vuedraggable 网页对象拖动组件，只需写少量的代码，就可以完成页面对象的拖动排序。
+https://github.com/SortableJS/Vue.Draggable
+演示: https://sortablejs.github.io/Vue.Draggable/#/simple Vue-Socket.io 对于socket.io库的封装，可以和Vuex状态管理配合使用。
+https://github.com/MetinSeylan/Vue-Socket.io
+Vue-multiselect 多选框的解决方案，还包括状态管理、下拉框、Ajax、检索框等功能。
+https://vue-multiselect.js.org/
+vuejs-datepicker vue的日期选择组件。
+https://github.com/charliekassel/vuejs-datepicker
+vue-md-editor vue的markdown编辑器。
+https://github.com/anguer/vue-editor
+演示: https://cngu.github.io/vue-typer/ vue-rate-it 五星评价组件，省的自己编写了。
+https://craigh411.github.io/vue-rate-it/
+演示: https://jsfiddle.net/craig_h_411/992o7cq5/ Vue-good-table vue的表格操作组件，支持列排序、内容过滤、分页等操作。
+https://xaksis.github.io/vue-good-table/
+Vuex 官方出品的状态管理组件，推荐！
+https://vuex.vuejs.org/
+Vue Router 官方出品的路由定义组件。
+https://router.vuejs.org/
+element-ui 基于vue 2.0的组件库，同时支持React和Angular。">
+
+
+<meta property="og:description" content="【Vue.js】21个值得一用的组件库 Nuxt.js Vue的服务器端渲染框架，解决客户端渲染的诸多问题。（首页载入慢，SEO等）
+https://nuxtjs.org/
+Vuetify vue的UI/UX框架，除Bootstrap外的选择。
+https://vuetifyjs.com/
+eslint-plugin-vue vue的文法校验工具，可以快速找出代码、指令、样式单中的问题，同时还可以集成到VSCode, Sublime, Atom等IDE中。
+https://eslint.vuejs.org/
+vue-lazyload 图片懒装载处理组件。
+https://github.com/hilongjw/vue-lazyload
+axios HTTP通信组件，可以远程存取各种REST-API服务。
+https://github.com/axios/axios
+vue-typer 内容显示的打字机组件。
+https://github.com/cngu/vue-typer
+vue-chartjs Chart.js库的vue实现，可以完成网页中的图表显示。
+https://vue-chartjs.org/
+演示: http://demo.vue-chartjs.org/ vue-fa FontAwesome5库的vue实现，可以调用FontAwesome5的各种组件。
+https://cweili.github.io/vue-fa/
+vee-validate 基于模板的vue校验框架。
+https://baianat.github.io/vee-validate/
+vuedraggable 网页对象拖动组件，只需写少量的代码，就可以完成页面对象的拖动排序。
+https://github.com/SortableJS/Vue.Draggable
+演示: https://sortablejs.github.io/Vue.Draggable/#/simple Vue-Socket.io 对于socket.io库的封装，可以和Vuex状态管理配合使用。
+https://github.com/MetinSeylan/Vue-Socket.io
+Vue-multiselect 多选框的解决方案，还包括状态管理、下拉框、Ajax、检索框等功能。
+https://vue-multiselect.js.org/
+vuejs-datepicker vue的日期选择组件。
+https://github.com/charliekassel/vuejs-datepicker
+vue-md-editor vue的markdown编辑器。
+https://github.com/anguer/vue-editor
+演示: https://cngu.github.io/vue-typer/ vue-rate-it 五星评价组件，省的自己编写了。
+https://craigh411.github.io/vue-rate-it/
+演示: https://jsfiddle.net/craig_h_411/992o7cq5/ Vue-good-table vue的表格操作组件，支持列排序、内容过滤、分页等操作。
+https://xaksis.github.io/vue-good-table/
+Vuex 官方出品的状态管理组件，推荐！
+https://vuex.vuejs.org/
+Vue Router 官方出品的路由定义组件。
+https://router.vuejs.org/
+element-ui 基于vue 2.0的组件库，同时支持React和Angular。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Vue.js】21个值得一用的组件库">
+<meta name="twitter:title" content="【Vue.js】21个值得一用的组件库">
+<meta property="og:url" content="https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/">
+<meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/">
+<meta property="og:site_name" content="xn213">
+<meta property="og:description" content="【Vue.js】21个值得一用的组件库 Nuxt.js Vue的服务器端渲染框架，解决客户端渲染的诸多问题。（首页载入慢，SEO等）
+https://nuxtjs.org/
+Vuetify vue的UI/UX框架，除Bootstrap外的选择。
+https://vuetifyjs.com/
+eslint-plugin-vue vue的文法校验工具，可以快速找出代码、指令、样式单中的问题，同时还可以集成到VSCode, Sublime, Atom等IDE中。
+https://eslint.vuejs.org/
+vue-lazyload 图片懒装载处理组件。
+https://github.com/hilongjw/vue-lazyload
+axios HTTP通信组件，可以远程存取各种REST-API服务。
+https://github.com/axios/axios
+vue-typer 内容显示的打字机组件。
+https://github.com/cngu/vue-typer
+vue-chartjs Chart.js库的vue实现，可以完成网页中的图表显示。
+https://vue-chartjs.org/
+演示: http://demo.vue-chartjs.org/ vue-fa FontAwesome5库的vue实现，可以调用FontAwesome5的各种组件。
+https://cweili.github.io/vue-fa/
+vee-validate 基于模板的vue校验框架。
+https://baianat.github.io/vee-validate/
+vuedraggable 网页对象拖动组件，只需写少量的代码，就可以完成页面对象的拖动排序。
+https://github.com/SortableJS/Vue.Draggable
+演示: https://sortablejs.github.io/Vue.Draggable/#/simple Vue-Socket.io 对于socket.io库的封装，可以和Vuex状态管理配合使用。
+https://github.com/MetinSeylan/Vue-Socket.io
+Vue-multiselect 多选框的解决方案，还包括状态管理、下拉框、Ajax、检索框等功能。
+https://vue-multiselect.js.org/
+vuejs-datepicker vue的日期选择组件。
+https://github.com/charliekassel/vuejs-datepicker
+vue-md-editor vue的markdown编辑器。
+https://github.com/anguer/vue-editor
+演示: https://cngu.github.io/vue-typer/ vue-rate-it 五星评价组件，省的自己编写了。
+https://craigh411.github.io/vue-rate-it/
+演示: https://jsfiddle.net/craig_h_411/992o7cq5/ Vue-good-table vue的表格操作组件，支持列排序、内容过滤、分页等操作。
+https://xaksis.github.io/vue-good-table/
+Vuex 官方出品的状态管理组件，推荐！
+https://vuex.vuejs.org/
+Vue Router 官方出品的路由定义组件。
+https://router.vuejs.org/
+element-ui 基于vue 2.0的组件库，同时支持React和Angular。">
+<meta name="twitter:description" content="【Vue.js】21个值得一用的组件库 Nuxt.js Vue的服务器端渲染框架，解决客户端渲染的诸多问题。（首页载入慢，SEO等）
+https://nuxtjs.org/
+Vuetify vue的UI/UX框架，除Bootstrap外的选择。
+https://vuetifyjs.com/
+eslint-plugin-vue vue的文法校验工具，可以快速找出代码、指令、样式单中的问题，同时还可以集成到VSCode, Sublime, Atom等IDE中。
+https://eslint.vuejs.org/
+vue-lazyload 图片懒装载处理组件。
+https://github.com/hilongjw/vue-lazyload
+axios HTTP通信组件，可以远程存取各种REST-API服务。
+https://github.com/axios/axios
+vue-typer 内容显示的打字机组件。
+https://github.com/cngu/vue-typer
+vue-chartjs Chart.js库的vue实现，可以完成网页中的图表显示。
+https://vue-chartjs.org/
+演示: http://demo.vue-chartjs.org/ vue-fa FontAwesome5库的vue实现，可以调用FontAwesome5的各种组件。
+https://cweili.github.io/vue-fa/
+vee-validate 基于模板的vue校验框架。
+https://baianat.github.io/vee-validate/
+vuedraggable 网页对象拖动组件，只需写少量的代码，就可以完成页面对象的拖动排序。
+https://github.com/SortableJS/Vue.Draggable
+演示: https://sortablejs.github.io/Vue.Draggable/#/simple Vue-Socket.io 对于socket.io库的封装，可以和Vuex状态管理配合使用。
+https://github.com/MetinSeylan/Vue-Socket.io
+Vue-multiselect 多选框的解决方案，还包括状态管理、下拉框、Ajax、检索框等功能。
+https://vue-multiselect.js.org/
+vuejs-datepicker vue的日期选择组件。
+https://github.com/charliekassel/vuejs-datepicker
+vue-md-editor vue的markdown编辑器。
+https://github.com/anguer/vue-editor
+演示: https://cngu.github.io/vue-typer/ vue-rate-it 五星评价组件，省的自己编写了。
+https://craigh411.github.io/vue-rate-it/
+演示: https://jsfiddle.net/craig_h_411/992o7cq5/ Vue-good-table vue的表格操作组件，支持列排序、内容过滤、分页等操作。
+https://xaksis.github.io/vue-good-table/
+Vuex 官方出品的状态管理组件，推荐！
+https://vuex.vuejs.org/
+Vue Router 官方出品的路由定义组件。
+https://router.vuejs.org/
+element-ui 基于vue 2.0的组件库，同时支持React和Angular。">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-05-21T18:21:13">
+  
+  
+    <meta property="article:modified_time" content="2019-05-21T18:21:13">
+  
+  
+  
+    
+      <meta property="article:section" content="Vue.js">
+    
+      <meta property="article:section" content="插件">
+    
+  
+  
+    
+      <meta property="article:tag" content="vue插件">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/ruoxiyy.jpg">
+  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/ruoxiyy.jpg">
+
+
+  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/ruoxiyy.jpg">
+  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/ruoxiyy.jpg">
+
+
+
+
+  <meta property="og:image" content="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80">
+  <meta property="twitter:image" content="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80">
+
+
+    <title>【Vue.js】21个值得一用的组件库</title>
+
+    <link rel="icon" href="https://xn213.github.io/hugo-blog/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://xn213.github.io/hugo-blog/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://xn213.github.io/hugo-blog/">xn213</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://xn213.github.io/hugo-blog/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://xn213.github.io/hugo-blog/#about">
+          <img class="sidebar-profile-picture" src="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">xn213</h4>
+        
+          <h5 class="sidebar-profile-bio">余生 倾尽天下</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/post/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">类别</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/xn213" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xn213.github.io/hugo-blog/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              post-header-cover--full"
+       style="background-image:url('/hugo-blog/images/ruoxiyy.jpg')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      【Vue.js】21个值得一用的组件库
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-05-21T18:21:13&#43;08:00">
+        
+  May 21, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/vue.js">Vue.js</a>, 
+    
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/%e6%8f%92%e4%bb%b6">插件</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               hasCoverCaption">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+            <span class="post-header-cover-caption caption">现成轮子</span>
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<!-- more -->
+
+<h1 id="vue-js-21个值得一用的组件库">【Vue.js】21个值得一用的组件库</h1>
+
+<h2 id="nuxt-js">Nuxt.js</h2>
+
+<p>Vue的服务器端渲染框架，解决客户端渲染的诸多问题。（首页载入慢，SEO等）</p>
+
+<p><a href="https://nuxtjs.org/">https://nuxtjs.org/</a></p>
+
+<h2 id="vuetify">Vuetify</h2>
+
+<p>vue的UI/UX框架，除Bootstrap外的选择。</p>
+
+<p><a href="https://vuetifyjs.com/">https://vuetifyjs.com/</a></p>
+
+<h2 id="eslint-plugin-vue">eslint-plugin-vue</h2>
+
+<p>vue的文法校验工具，可以快速找出代码、指令、样式单中的问题，同时还可以集成到VSCode, Sublime, Atom等IDE中。</p>
+
+<p><a href="https://eslint.vuejs.org/">https://eslint.vuejs.org/</a></p>
+
+<h2 id="vue-lazyload">vue-lazyload</h2>
+
+<p>图片懒装载处理组件。</p>
+
+<p><a href="https://github.com/hilongjw/vue-lazyload">https://github.com/hilongjw/vue-lazyload</a></p>
+
+<h2 id="axios">axios</h2>
+
+<p>HTTP通信组件，可以远程存取各种REST-API服务。</p>
+
+<p><a href="https://github.com/axios/axios">https://github.com/axios/axios</a></p>
+
+<h2 id="vue-typer">vue-typer</h2>
+
+<p>内容显示的打字机组件。</p>
+
+<p><a href="https://github.com/cngu/vue-typer">https://github.com/cngu/vue-typer</a></p>
+
+<h2 id="vue-chartjs">vue-chartjs</h2>
+
+<p>Chart.js库的vue实现，可以完成网页中的图表显示。</p>
+
+<p><a href="https://vue-chartjs.org/">https://vue-chartjs.org/</a></p>
+
+<h3 id="演示-http-demo-vue-chartjs-org">演示: <a href="http://demo.vue-chartjs.org/">http://demo.vue-chartjs.org/</a></h3>
+
+<h2 id="vue-fa">vue-fa</h2>
+
+<p>FontAwesome5库的vue实现，可以调用FontAwesome5的各种组件。</p>
+
+<p><a href="https://cweili.github.io/vue-fa/">https://cweili.github.io/vue-fa/</a></p>
+
+<h2 id="vee-validate">vee-validate</h2>
+
+<p>基于模板的vue校验框架。</p>
+
+<p><a href="https://baianat.github.io/vee-validate/">https://baianat.github.io/vee-validate/</a></p>
+
+<h2 id="vuedraggable">vuedraggable</h2>
+
+<p>网页对象拖动组件，只需写少量的代码，就可以完成页面对象的拖动排序。</p>
+
+<p><a href="https://github.com/SortableJS/Vue.Draggable">https://github.com/SortableJS/Vue.Draggable</a></p>
+
+<h3 id="演示-https-sortablejs-github-io-vue-draggable-simple">演示: <a href="https://sortablejs.github.io/Vue.Draggable/#/simple">https://sortablejs.github.io/Vue.Draggable/#/simple</a></h3>
+
+<h2 id="vue-socket-io">Vue-Socket.io</h2>
+
+<p>对于socket.io库的封装，可以和Vuex状态管理配合使用。</p>
+
+<p><a href="https://github.com/MetinSeylan/Vue-Socket.io">https://github.com/MetinSeylan/Vue-Socket.io</a></p>
+
+<h2 id="vue-multiselect">Vue-multiselect</h2>
+
+<p>多选框的解决方案，还包括状态管理、下拉框、Ajax、检索框等功能。</p>
+
+<p><a href="https://vue-multiselect.js.org/">https://vue-multiselect.js.org/</a></p>
+
+<h2 id="vuejs-datepicker">vuejs-datepicker</h2>
+
+<p>vue的日期选择组件。</p>
+
+<p><a href="https://github.com/charliekassel/vuejs-datepicker">https://github.com/charliekassel/vuejs-datepicker</a></p>
+
+<h2 id="vue-md-editor">vue-md-editor</h2>
+
+<p>vue的markdown编辑器。</p>
+
+<p><a href="https://github.com/anguer/vue-editor">https://github.com/anguer/vue-editor</a></p>
+
+<h3 id="演示-https-cngu-github-io-vue-typer">演示: <a href="https://cngu.github.io/vue-typer/">https://cngu.github.io/vue-typer/</a></h3>
+
+<h2 id="vue-rate-it">vue-rate-it</h2>
+
+<p>五星评价组件，省的自己编写了。</p>
+
+<p><a href="https://craigh411.github.io/vue-rate-it/">https://craigh411.github.io/vue-rate-it/</a></p>
+
+<h3 id="演示-https-jsfiddle-net-craig-h-411-992o7cq5">演示: <a href="https://jsfiddle.net/craig_h_411/992o7cq5/">https://jsfiddle.net/craig_h_411/992o7cq5/</a></h3>
+
+<h2 id="vue-good-table">Vue-good-table</h2>
+
+<p>vue的表格操作组件，支持列排序、内容过滤、分页等操作。</p>
+
+<p><a href="https://xaksis.github.io/vue-good-table/">https://xaksis.github.io/vue-good-table/</a></p>
+
+<h2 id="vuex">Vuex</h2>
+
+<p>官方出品的状态管理组件，推荐！</p>
+
+<p><a href="https://vuex.vuejs.org/">https://vuex.vuejs.org/</a></p>
+
+<h2 id="vue-router">Vue Router</h2>
+
+<p>官方出品的路由定义组件。</p>
+
+<p><a href="https://router.vuejs.org/">https://router.vuejs.org/</a></p>
+
+<h2 id="element-ui">element-ui</h2>
+
+<p>基于vue 2.0的组件库，同时支持React和Angular。</p>
+
+<p><a href="http://element.eleme.io/">http://element.eleme.io/</a></p>
+
+<h2 id="vue-material">vue-material</h2>
+
+<p>Google设计风格的UI组件库。</p>
+
+<p><a href="https://vuematerial.io/">https://vuematerial.io/</a></p>
+
+<h2 id="bootstrap-vue">bootstrap-vue</h2>
+
+<p>Bootstrap的vue组件库，好用没有之一。</p>
+
+<p><a href="https://bootstrap-vue.js.org/">https://bootstrap-vue.js.org/</a></p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/vue%E6%8F%92%E4%BB%B6/">vue插件</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/" data-tooltip="Hexo Create Blog">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/%29">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/%29">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 xn213. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/07/hexo-create-blog/" data-tooltip="Hexo Create Blog">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/%29">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/%29">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F05%2Fvue.js21%25E4%25B8%25AA%25E5%2580%25BC%25E5%25BE%2597%25E4%25B8%2580%25E7%2594%25A8%25E7%259A%2584%25E7%25BB%2584%25E4%25BB%25B6%25E5%25BA%2593%2F%29">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F05%2Fvue.js21%25E4%25B8%25AA%25E5%2580%25BC%25E5%25BE%2597%25E4%25B8%2580%25E7%2594%25A8%25E7%259A%2584%25E7%25BB%2584%25E4%25BB%25B6%25E5%25BA%2593%2F%29">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F05%2Fvue.js21%25E4%25B8%25AA%25E5%2580%25BC%25E5%25BE%2597%25E4%25B8%2580%25E7%2594%25A8%25E7%259A%2584%25E7%25BB%2584%25E4%25BB%25B6%25E5%25BA%2593%2F%29">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">xn213</h4>
+    
+      <div id="about-card-bio">余生 倾尽天下</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        FE
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Peking
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://xn213.github.io/hugo-blog/images/cover.png');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://xn213.github.io/hugo-blog/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/xn213.github.io\/hugo-blog\/2019\/05\/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93\/';
+          
+            this.page.identifier = '\/2019\/05\/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
