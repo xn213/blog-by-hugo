@@ -135,8 +135,7 @@ element-ui 基于vue 2.0的组件库，同时支持React和Angular。</descripti
       <pubDate>Mon, 25 Mar 2019 10:52:13 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/</guid>
-      <description>三月拾花酿春, 六月流萤染夏, 十月稻陌拾秋, 腊月丛中吻雪, 一年四季, 四季最好都赠你
-喜欢是一朝一夕,
+      <description>喜欢是一朝一夕,
 爱是从心动 到 古稀
 三月拾花酿春
 六月流萤染夏
@@ -144,6 +143,19 @@ element-ui 基于vue 2.0的组件库，同时支持React和Angular。</descripti
 腊月丛中吻雪
 &amp;emsp;一年四季
 四季最好都赠你
+:笑哭::笑哭::sunny:
+一盏清酒, 暖不透岁月的闲愁,
+&amp;emsp;净水研墨, 画不满纵横的沟壑,
+花语月对坐, 只倾诉一句懂得.
+
+骨子里有坚强,
+&amp;emsp;言行中有教养,
+&amp;emsp;&amp;emsp;交往中有包容,
+&amp;emsp;&amp;emsp;&amp;emsp;心底有善良!
+太计较得失,
+&amp;emsp;会得不偿失!
+难得糊涂,
+&amp;emsp;简单即时快乐!
 生而为人, 我一直与人为善,
 &amp;emsp;你为何咄咄逼人,
 &amp;emsp;&amp;emsp;风水轮流转,
@@ -163,13 +175,7 @@ good night^ 愿梦里有阳光
 &amp;emsp;&amp;emsp;你就该知道,
 我到底有多难过~~~~
 不出意外的话, 我们再也不会见到了
-逢人不必言深, 孤独本是常态&amp;hellip; #纸短情长
-:music: 芒种 &amp;ndash; 赵芳婧
-
-喜欢上做饭 :laugh:
-:向日葵::向日葵:
-一定要和你同频的人在一起,
-&amp;emsp;和比你优秀的人在一起,</description>
+逢人不必言深, 孤独本是常态&amp;hellip; #纸短情长</description>
     </item>
     
     <item>
@@ -275,11 +281,11 @@ Vue语法片段, 增强您的 Vue 工作流程
     </item>
     
     <item>
-      <title>Code Snippets</title>
-      <link>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</link>
+      <title>JS Snippets</title>
+      <link>https://xn213.github.io/hugo-blog/2017/07/js-snippets/</link>
       <pubDate>Tue, 25 Jul 2017 21:13:32 +0800</pubDate>
       
-      <guid>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</guid>
+      <guid>https://xn213.github.io/hugo-blog/2017/07/js-snippets/</guid>
       <description>一些常用的代码块,
 JS Snippets // isObject function isObject (obj) { return obj !== null &amp;amp;&amp;amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function valueIsNumber(value) { return !isNaN(Number(value)); } //  ↑ Back to Top
 如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断

@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Code Snippets</title>
-      <link>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</link>
+      <title>JS Snippets</title>
+      <link>https://xn213.github.io/hugo-blog/2017/07/js-snippets/</link>
       <pubDate>Tue, 25 Jul 2017 21:13:32 +0800</pubDate>
       
-      <guid>https://xn213.github.io/hugo-blog/2017/07/code-snippets/</guid>
+      <guid>https://xn213.github.io/hugo-blog/2017/07/js-snippets/</guid>
       <description>一些常用的代码块,
 JS Snippets // isObject function isObject (obj) { return obj !== null &amp;amp;&amp;amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function valueIsNumber(value) { return !isNaN(Number(value)); } //  ↑ Back to Top
 如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断
