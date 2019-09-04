@@ -345,6 +345,41 @@ i.addEventListener(&quot;play&quot;, pauseAll.bind(i));
 
 <p><a href="#前端遇到的问题及解决方案">↑ Back to Top</a></p>
 
+<hr />
+
+<ol>
+<li>XSS 攻击, 根据攻击的来源: 反射型/ 存储型/ DOM 型</li>
+</ol>
+
+<p>防范存储型 XSS 攻击的策略就是不相信一切用户提交的信息，比如说用户的评论、发表的文章等等。对于这些信息一律进行字符串转义，主要是引号、尖括号、斜杠</p>
+
+<pre><code class="language-js">function escape(str) {
+  str = str.replace(/&amp;/g, '&amp;amp;')
+  str = str.replace(/&lt;/g, '&amp;lt;')
+  str = str.replace(/&gt;/g, '&amp;gt;')
+  str = str.replace(/&quot;/g, '&amp;quto;')
+  str = str.replace(/'/g, '&amp;#39;')
+  str = str.replace(/`/g, '&amp;#96;')
+  str = str.replace(/\//g, '&amp;#x2F;')
+  return str
+}
+// &quot;&amp;lt;script&amp;gt;alert(1)&amp;lt;&amp;#x2F;script&amp;gt;&quot;
+escape('&lt;script&gt;alert(1)&lt;/script&gt;')
+</code></pre>
+
+<p>在显示富文本的场景下其实不能把所有的内容都转义了，因为这样会把需要的格式也过滤掉。</p>
+
+<p>对于这种情况，通常考虑采用<strong>白名单</strong>过滤的办法。</p>
+
+<pre><code class="language-js">// 使用 js-xss 开源项目
+const xss = require('xss')
+let html = xss('&lt;h1 id=&quot;title&quot;&gt;XSS&lt;/h1&gt;&lt;script&gt;alert(&quot;xss&quot;);&lt;/script&gt;')
+// -&gt; &lt;h1&gt;XSS&lt;/h1&gt;&amp;lt;script&amp;gt;alert(&quot;xss&quot;);&amp;lt;/script&amp;gt;
+console.log(html)
+</code></pre>
+
+<hr />
+
               
             </div>
           </div>
