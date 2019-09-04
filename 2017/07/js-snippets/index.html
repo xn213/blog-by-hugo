@@ -9,15 +9,13 @@
 <meta name="author" content="xn213">
 <meta name="keywords" content="代码段, js-snippets, code-snippets, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
 <meta name="description" content="一些常用的代码块,
-JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function valueIsNumber(value) { return !isNaN(Number(value)); } //  ↑ Back to Top
-如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断
-/** * 判断一个对象是否是数组，参数不是对象或者不是数组，返回false * * @param {Object} arg 需要测试是否为数组的对象 * @return {Boolean} 传入参数是数组返回true，否则返回false */ function isArray(arg) { if (typeof arg === &#39;object&#39;) { return Object.prototype.toString.call(arg) === &#39;[object Array]&#39;; } return false; }  ↑ Back to Top">
+JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function isNumber(value) { return !isNaN(Number(value)); } // isEmpty const isEmpty = value =&gt; { return value === undefined || value === null || (typeof value === &quot;object&quot; &amp;&amp; Object.keys(value).length === 0) || (typeof value === &quot;string&quot; &amp;&amp; value.trim().length === 0) }  ↑ Back to Top
+如何判断一个对象是否为数组 如果浏览器支持 Array.">
 
 
 <meta property="og:description" content="一些常用的代码块,
-JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function valueIsNumber(value) { return !isNaN(Number(value)); } //  ↑ Back to Top
-如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断
-/** * 判断一个对象是否是数组，参数不是对象或者不是数组，返回false * * @param {Object} arg 需要测试是否为数组的对象 * @return {Boolean} 传入参数是数组返回true，否则返回false */ function isArray(arg) { if (typeof arg === &#39;object&#39;) { return Object.prototype.toString.call(arg) === &#39;[object Array]&#39;; } return false; }  ↑ Back to Top">
+JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function isNumber(value) { return !isNaN(Number(value)); } // isEmpty const isEmpty = value =&gt; { return value === undefined || value === null || (typeof value === &quot;object&quot; &amp;&amp; Object.keys(value).length === 0) || (typeof value === &quot;string&quot; &amp;&amp; value.trim().length === 0) }  ↑ Back to Top
+如何判断一个对象是否为数组 如果浏览器支持 Array.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS Snippets">
 <meta name="twitter:title" content="JS Snippets">
@@ -25,13 +23,11 @@ JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp;
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2017/07/js-snippets/">
 <meta property="og:site_name" content="xn213">
 <meta property="og:description" content="一些常用的代码块,
-JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function valueIsNumber(value) { return !isNaN(Number(value)); } //  ↑ Back to Top
-如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断
-/** * 判断一个对象是否是数组，参数不是对象或者不是数组，返回false * * @param {Object} arg 需要测试是否为数组的对象 * @return {Boolean} 传入参数是数组返回true，否则返回false */ function isArray(arg) { if (typeof arg === &#39;object&#39;) { return Object.prototype.toString.call(arg) === &#39;[object Array]&#39;; } return false; }  ↑ Back to Top">
+JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function isNumber(value) { return !isNaN(Number(value)); } // isEmpty const isEmpty = value =&gt; { return value === undefined || value === null || (typeof value === &quot;object&quot; &amp;&amp; Object.keys(value).length === 0) || (typeof value === &quot;string&quot; &amp;&amp; value.trim().length === 0) }  ↑ Back to Top
+如何判断一个对象是否为数组 如果浏览器支持 Array.">
 <meta name="twitter:description" content="一些常用的代码块,
-JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function valueIsNumber(value) { return !isNaN(Number(value)); } //  ↑ Back to Top
-如何判断一个对象是否为数组 如果浏览器支持 Array.isArray()可以直接判断, 否则需进行必要判断
-/** * 判断一个对象是否是数组，参数不是对象或者不是数组，返回false * * @param {Object} arg 需要测试是否为数组的对象 * @return {Boolean} 传入参数是数组返回true，否则返回false */ function isArray(arg) { if (typeof arg === &#39;object&#39;) { return Object.prototype.toString.call(arg) === &#39;[object Array]&#39;; } return false; }  ↑ Back to Top">
+JS Snippets // isObject function isObject (obj) { return obj !== null &amp;&amp; typeof obj === &#39;object&#39; } // 判断数据是数字，可能类型是string，但是&#39;123&#39;也算数字 function isNumber(value) { return !isNaN(Number(value)); } // isEmpty const isEmpty = value =&gt; { return value === undefined || value === null || (typeof value === &quot;object&quot; &amp;&amp; Object.keys(value).length === 0) || (typeof value === &quot;string&quot; &amp;&amp; value.trim().length === 0) }  ↑ Back to Top
+如何判断一个对象是否为数组 如果浏览器支持 Array.">
 <meta property="og:locale" content="en-us">
 
   
@@ -283,11 +279,16 @@ function isObject (obj) {
 }
 
 // 判断数据是数字，可能类型是string，但是'123'也算数字
-function valueIsNumber(value) {
+function isNumber(value) {
   return !isNaN(Number(value));
 }
 
-// 
+// isEmpty
+const isEmpty = value =&gt; {
+  return value === undefined || value === null ||
+    (typeof value === &quot;object&quot; &amp;&amp; Object.keys(value).length === 0) ||
+    (typeof value === &quot;string&quot; &amp;&amp; value.trim().length === 0)
+}
 </code></pre>
 
 <p><a href="#js-snippets">↑ Back to Top</a></p>
