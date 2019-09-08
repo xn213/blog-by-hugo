@@ -7,80 +7,44 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
-<meta name="keywords" content="Chrome, 插件, 博客, 工具, hugo, vue, vuejs, nodejs, react, development">
-<meta name="description" content="自用谷歌浏览器插件 - 持续更新
-Chrome Extension  vuetools
- web前端助手: 
- FeHelper，Chrome浏览器插件，包含一些前端实用的工具  chrome 跨域问题解决
- Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
- Vimium = Vim &#43; Chromium 超方便的快捷键   画词翻译:
- google应用商店 下载.crx文件  crxMouse Top Gestures
- Clear Cache
- 拷贝为 Markdown
- wappalyzer
- JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
+<meta name="keywords" content="前端, 前端问题, 解决方案, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
+<meta name="description" content=" 自定义指令: 权限指令 // v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否 Vue.directive(&#39;allow&#39;, { inserted: (el, binding, vnode) =&gt; { let permissionList = vnode.context.$route.meta.permission if(!permissionList.includes(binding.value)){ el.parentNode.removeChild(el) } } })  // 使用
+&lt;a @click=&quot;upload&quot; v-allow=&quot;&#39;3&#39;&quot;&gt;&lt;/a&gt; /* 3代表一个上传权限的ID，权限中有3则显示按钮 */  ">
 
 
-<meta property="og:description" content="自用谷歌浏览器插件 - 持续更新
-Chrome Extension  vuetools
- web前端助手: 
- FeHelper，Chrome浏览器插件，包含一些前端实用的工具  chrome 跨域问题解决
- Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
- Vimium = Vim &#43; Chromium 超方便的快捷键   画词翻译:
- google应用商店 下载.crx文件  crxMouse Top Gestures
- Clear Cache
- 拷贝为 Markdown
- wappalyzer
- JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
+<meta property="og:description" content=" 自定义指令: 权限指令 // v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否 Vue.directive(&#39;allow&#39;, { inserted: (el, binding, vnode) =&gt; { let permissionList = vnode.context.$route.meta.permission if(!permissionList.includes(binding.value)){ el.parentNode.removeChild(el) } } })  // 使用
+&lt;a @click=&quot;upload&quot; v-allow=&quot;&#39;3&#39;&quot;&gt;&lt;/a&gt; /* 3代表一个上传权限的ID，权限中有3则显示按钮 */  ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chrome Extensions">
-<meta name="twitter:title" content="Chrome Extensions">
-<meta property="og:url" content="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/">
-<meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/">
+<meta property="og:title" content="Vue Codes">
+<meta name="twitter:title" content="Vue Codes">
+<meta property="og:url" content="https://xn213.github.io/hugo-blog/2018/12/vue-codes/">
+<meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2018/12/vue-codes/">
 <meta property="og:site_name" content="xn213">
-<meta property="og:description" content="自用谷歌浏览器插件 - 持续更新
-Chrome Extension  vuetools
- web前端助手: 
- FeHelper，Chrome浏览器插件，包含一些前端实用的工具  chrome 跨域问题解决
- Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
- Vimium = Vim &#43; Chromium 超方便的快捷键   画词翻译:
- google应用商店 下载.crx文件  crxMouse Top Gestures
- Clear Cache
- 拷贝为 Markdown
- wappalyzer
- JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
-<meta name="twitter:description" content="自用谷歌浏览器插件 - 持续更新
-Chrome Extension  vuetools
- web前端助手: 
- FeHelper，Chrome浏览器插件，包含一些前端实用的工具  chrome 跨域问题解决
- Allow-Control-Allow-Origin Allow CORS: Access-Control-Allow-Origin 下载  Vimium: 键盘操作更便捷
- Vimium = Vim &#43; Chromium 超方便的快捷键   画词翻译:
- google应用商店 下载.crx文件  crxMouse Top Gestures
- Clear Cache
- 拷贝为 Markdown
- wappalyzer
- JSON Viewer:  The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.">
+<meta property="og:description" content=" 自定义指令: 权限指令 // v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否 Vue.directive(&#39;allow&#39;, { inserted: (el, binding, vnode) =&gt; { let permissionList = vnode.context.$route.meta.permission if(!permissionList.includes(binding.value)){ el.parentNode.removeChild(el) } } })  // 使用
+&lt;a @click=&quot;upload&quot; v-allow=&quot;&#39;3&#39;&quot;&gt;&lt;/a&gt; /* 3代表一个上传权限的ID，权限中有3则显示按钮 */  ">
+<meta name="twitter:description" content=" 自定义指令: 权限指令 // v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否 Vue.directive(&#39;allow&#39;, { inserted: (el, binding, vnode) =&gt; { let permissionList = vnode.context.$route.meta.permission if(!permissionList.includes(binding.value)){ el.parentNode.removeChild(el) } } })  // 使用
+&lt;a @click=&quot;upload&quot; v-allow=&quot;&#39;3&#39;&quot;&gt;&lt;/a&gt; /* 3代表一个上传权限的ID，权限中有3则显示按钮 */  ">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-02-13T20:13:20">
+    <meta property="article:published_time" content="2018-12-13T21:10:13">
   
   
-    <meta property="article:modified_time" content="2019-02-13T20:13:20">
+    <meta property="article:modified_time" content="2018-12-13T21:10:13">
   
   
   
     
-      <meta property="article:section" content="CodeTools">
-    
-      <meta property="article:section" content="Chrome">
+      <meta property="article:section" content="Vue.js">
     
   
   
     
-      <meta property="article:tag" content="Chrome">
+      <meta property="article:tag" content="vue">
     
-      <meta property="article:tag" content="插件">
+      <meta property="article:tag" content="codes">
+    
+      <meta property="article:tag" content="解决方案">
     
   
 
@@ -93,8 +57,8 @@ Chrome Extension  vuetools
 
 
 
-  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/Chrome-Extensions.png">
-  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/Chrome-Extensions.png">
+  <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/Vue-Codes.png">
+  <meta property="twitter:image" content="https://xn213.github.io/hugo-blog/images/Vue-Codes.png">
 
 
   <meta property="og:image" content="https://xn213.github.io/hugo-blog/images/title-cover.png">
@@ -107,14 +71,14 @@ Chrome Extension  vuetools
   <meta property="twitter:image" content="https://s.gravatar.com/avatar/7360686615b1a1a30eecc7fed5cd7171?s=80">
 
 
-    <title>Chrome Extensions</title>
+    <title>Vue Codes</title>
 
     <link rel="icon" href="https://xn213.github.io/hugo-blog/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/">
+    <link rel="canonical" href="https://xn213.github.io/hugo-blog/2018/12/vue-codes/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -254,23 +218,23 @@ Chrome Extension  vuetools
 
       
   <div class="post-header-cover
-              text-left
+              text-center
               post-header-cover--full"
        style="background-image:url('/hugo-blog/images/title-cover.png')"
        data-behavior="5">
     
-      <div class="post-header main-content-wrap text-left">
+      <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Chrome Extensions
+      Vue Codes
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-02-13T20:13:20&#43;08:00">
+      <time itemprop="datePublished" datetime="2018-12-13T21:10:13&#43;08:00">
         
-  February 13, 2019
+  December 13, 2018
 
       </time>
     
@@ -279,9 +243,7 @@ Chrome Extension  vuetools
   
     <span>in</span>
     
-      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/codetools">CodeTools</a>, 
-    
-      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/chrome">Chrome</a>
+      <a class="category-link" href="https://xn213.github.io/hugo-blog/categories/vue.js">Vue.js</a>
     
   
 
@@ -298,75 +260,30 @@ Chrome Extension  vuetools
                hasCoverCaption">
         <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
-            <span class="post-header-cover-caption caption">自用谷歌浏览器插件</span>
+            <span class="post-header-cover-caption caption">Vue 代码段</span>
           
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               
 
-<p>自用谷歌浏览器插件 - 持续更新</p>
+<h2 id="自定义指令-权限指令">自定义指令: 权限指令</h2>
 
-<h1 id="chrome-extension">Chrome Extension</h1>
+<pre><code class="language-js">// v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否
+Vue.directive('allow', {
+  inserted: (el, binding, vnode) =&gt; {
+    let permissionList = vnode.context.$route.meta.permission
+    if(!permissionList.includes(binding.value)){
+      el.parentNode.removeChild(el)
+    }
+  }
+})
+</code></pre>
 
-<ul>
-<li><p>vuetools</p></li>
+<p>// 使用</p>
 
-<li><p><a href="https://www.baidufe.com/fehelper">web前端助手: </a></p>
-
-<ul>
-<li>FeHelper，Chrome浏览器插件，包含一些前端实用的工具</li>
-</ul></li>
-
-<li><p><strong>chrome 跨域问题解决</strong></p>
-
-<ul>
-<li><a href="https://chrome.google.com/webstore/detail/nlfbmbojpeacfghkpbjhddihlkkiljbi">Allow-Control-Allow-Origin</a></li>
-<li><a href="https://173app.com/search?q=Allow%20CORS:%20Access-Control-Allow-Origin&amp;type=ext">Allow CORS: Access-Control-Allow-Origin 下载</a></li>
-</ul></li>
-
-<li><p><strong>Vimium: 键盘操作更便捷</strong></p>
-
-<ul>
-<li><a href="https://chrome.google.com/webstore/search/Vimium">Vimium = Vim + Chromium 超方便的快捷键</a>
-<img src="https://xn213.github.io/hugo-blog/post/img/Chrome-Vimium快捷键.png" alt="Chrome-Vimium快捷键"/></li>
-</ul></li>
-
-<li><p><strong>画词翻译:</strong></p>
-
-<ul>
-<li><a href="https://chrome.google.com/webstore/detail/ikhdkkncnoglghljlkmcimlnlhkeamad">google应用商店</a></li>
-<li><a href="https://github.com/Selection-Translator/crx-selection-translate/releases/latest">下载.crx文件</a></li>
-</ul></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/jlgkpaicikihijadgifklkbpdajbkhjo">crxMouse Top Gestures</a></p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/cppjkneekbjaeellbfkmgnhonkkjfpdn">Clear Cache</a></p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/dgoenpnkphkichnohepecnmpmihnabdg">拷贝为 Markdown</a></p></li>
-
-<li><p><a href="https://www.wappalyzer.com/">wappalyzer</a></p></li>
-
-<li><p><a href="https://github.com/tulios/json-viewer">JSON Viewer: </a>
-The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen. It is a Chrome extension for printing JSON and JSONP.</p></li>
-
-<li><p><a href="https://github.com/ovity/octotree">Octotree: </a>
-Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a code tree on GitHub.</p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">ABP: Adblock Plus - 的免费广告拦截程序</a></p></li>
-
-<li><p><a href="https://github.com/LuisReinoso/git-history-browser-extension">Git History: </a>Git History Browser Extension</p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/lecdifefmmfjnjjinhaennhdlmcaeeeb">掘金</a></p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/gokgophibdidjjpildcdbfpmcahilaaf">下载+</a></p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/mbniclmhobmnbdlbpiphghaielnnpgdp">Lightshot(截图工具)</a></p></li>
-
-<li><p>点点影视VIP视频解析</p></li>
-
-<li><p><a href="https://www.gwdang.com/">购物党自动比价工具</a></p></li>
-</ul>
+<pre><code class="language-html">&lt;a @click=&quot;upload&quot; v-allow=&quot;'3'&quot;&gt;&lt;/a&gt; /* 3代表一个上传权限的ID，权限中有3则显示按钮 */
+</code></pre>
 
               
             </div>
@@ -379,9 +296,11 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/chrome/">Chrome</a>
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/vue/">vue</a>
 
-  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/codes/">codes</a>
+
+  <a class="tag tag--primary tag--small" href="https://xn213.github.io/hugo-blog/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">解决方案</a>
 
                   </div>
                 
@@ -394,7 +313,7 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/" data-tooltip="Chrome Extensions">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -402,7 +321,7 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2018/12/vue-codes/" data-tooltip="Vue Codes">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/" data-tooltip="Fe Interview Czbk">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -420,19 +339,19 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2018/12/vue-codes/%29">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2018/12/vue-codes/%29">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2018/12/vue-codes/%29">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -480,7 +399,7 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/03/ruoxiyy/" data-tooltip="Ruoxiyy">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/" data-tooltip="Chrome Extensions">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -488,7 +407,7 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2018/12/vue-codes/" data-tooltip="Vue Codes">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://xn213.github.io/hugo-blog/2018/11/fe-interview-czbk/" data-tooltip="Fe Interview Czbk">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -506,19 +425,19 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2018/12/vue-codes/%29">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2018/12/vue-codes/%29">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2019/02/chrome-extensions/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https://xn213.github.io/hugo-blog/2018/12/vue-codes/%29">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -548,19 +467,19 @@ Octotree Browser extension (Chrome, Firefox, Opera and Safari) that displays a c
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F02%2Fchrome-extensions%2F%29">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2018%2F12%2Fvue-codes%2F%29">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F02%2Fchrome-extensions%2F%29">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2018%2F12%2Fvue-codes%2F%29">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2019%2F02%2Fchrome-extensions%2F%29">
+        <a class="share-option-btn" target="new" href="https://github.com/xn213%25!%28EXTRA%20string=https%3A%2F%2Fxn213.github.io%2Fhugo-blog%2F2018%2F12%2Fvue-codes%2F%29">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -652,9 +571,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/xn213.github.io\/hugo-blog\/2019\/02\/chrome-extensions\/';
+          this.page.url = 'https:\/\/xn213.github.io\/hugo-blog\/2018\/12\/vue-codes\/';
           
-            this.page.identifier = '\/2019\/02\/chrome-extensions\/'
+            this.page.identifier = '\/2018\/12\/vue-codes\/'
           
         };
         (function() {

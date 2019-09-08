@@ -6,10 +6,20 @@
     <description>Recent content in 解决方案 on xn213</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Feb 2017 21:13:10 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Dec 2018 21:10:13 +0800</lastBuildDate>
     
 	<atom:link href="https://xn213.github.io/hugo-blog/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue Codes</title>
+      <link>https://xn213.github.io/hugo-blog/2018/12/vue-codes/</link>
+      <pubDate>Thu, 13 Dec 2018 21:10:13 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2018/12/vue-codes/</guid>
+      <description> 自定义指令: 权限指令 // v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否 Vue.directive(&#39;allow&#39;, { inserted: (el, binding, vnode) =&amp;gt; { let permissionList = vnode.context.$route.meta.permission if(!permissionList.includes(binding.value)){ el.parentNode.removeChild(el) } } })  // 使用
+&amp;lt;a @click=&amp;quot;upload&amp;quot; v-allow=&amp;quot;&#39;3&#39;&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; /* 3代表一个上传权限的ID，权限中有3则显示按钮 */  </description>
+    </item>
     
     <item>
       <title>Fe Solutions</title>

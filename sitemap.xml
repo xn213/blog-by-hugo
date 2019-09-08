@@ -173,12 +173,12 @@
   </url>
   
   <url>
-    <loc>https://xn213.github.io/hugo-blog/categories/chrome/</loc>
+    <loc>https://xn213.github.io/hugo-blog/tags/chrome/</loc>
     <lastmod>2019-02-13T20:13:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xn213.github.io/hugo-blog/tags/chrome/</loc>
+    <loc>https://xn213.github.io/hugo-blog/categories/chrome/</loc>
     <lastmod>2019-02-13T20:13:20+08:00</lastmod>
   </url>
   
@@ -190,6 +190,26 @@
   <url>
     <loc>https://xn213.github.io/hugo-blog/tags/%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2019-02-13T20:13:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/codes/</loc>
+    <lastmod>2018-12-13T21:10:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/vue/</loc>
+    <lastmod>2018-12-13T21:10:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/2018/12/vue-codes/</loc>
+    <lastmod>2018-12-13T21:10:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2018-12-13T21:10:13+08:00</lastmod>
   </url>
   
   <url>
@@ -314,11 +334,6 @@
   
   <url>
     <loc>https://xn213.github.io/hugo-blog/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2017-02-13T21:13:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xn213.github.io/hugo-blog/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2017-02-13T21:13:10+08:00</lastmod>
   </url>
   
