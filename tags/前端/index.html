@@ -318,8 +318,7 @@ js 异步加载的方式
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        前端遇到的问题及解决方案:
- 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+        前端遇到的问题及解决方案:  页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
 const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;

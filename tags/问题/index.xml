@@ -17,8 +17,7 @@
       <pubDate>Mon, 13 Feb 2017 21:13:10 +0800</pubDate>
       
       <guid>https://xn213.github.io/hugo-blog/2017/02/fe-solutions/</guid>
-      <description>前端遇到的问题及解决方案:
- 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+      <description>前端遇到的问题及解决方案:  页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
 const audios = document.getElementsByTagName(&amp;quot;audio&amp;quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;amp;&amp;amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&amp;quot;play&amp;quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &amp;quot;vetur.format.defaultFormatter.html&amp;quot;: &amp;quot;js-beautify-html&amp;quot;

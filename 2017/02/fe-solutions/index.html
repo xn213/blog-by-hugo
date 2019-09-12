@@ -8,8 +8,7 @@
 <meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="前端, 前端问题, 解决方案, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
-<meta name="description" content="前端遇到的问题及解决方案:
- 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+<meta name="description" content="前端遇到的问题及解决方案:  页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
 const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
@@ -17,8 +16,7 @@ const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数
 ↑ Back to Top">
 
 
-<meta property="og:description" content="前端遇到的问题及解决方案:
- 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+<meta property="og:description" content="前端遇到的问题及解决方案:  页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
 const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
@@ -30,15 +28,13 @@ const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数
 <meta property="og:url" content="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
 <meta property="twitter:url" content="https://xn213.github.io/hugo-blog/2017/02/fe-solutions/">
 <meta property="og:site_name" content="xn213">
-<meta property="og:description" content="前端遇到的问题及解决方案:
- 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+<meta property="og:description" content="前端遇到的问题及解决方案:  页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
 const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
 3、搞定 : 格式化快捷键：Alt&#43;Shift&#43;F
 ↑ Back to Top">
-<meta name="twitter:description" content="前端遇到的问题及解决方案:
- 页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
+<meta name="twitter:description" content="前端遇到的问题及解决方案:  页面多个音频 audio 只允许播放一个 js 解决方案: (video 同理)
 const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数 function pauseAll() { let self = this; [].forEach.call(audios, function (i) { // 将audios中其他的audio全部暂停 i !== self &amp;&amp; i.pause(); }) } // 给play事件绑定暂停函数 [].forEach.call(audios, function (i) { i.addEventListener(&quot;play&quot;, pauseAll.bind(i)); });   ↑ Back to Top
  Vscode 格式化 vue Template 代码段  1、安装 vetur
 2、在 User Setting 中增加设置: &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;
@@ -285,7 +281,9 @@ const audios = document.getElementsByTagName(&quot;audio&quot;); // 暂停函数
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>前端遇到的问题及解决方案:</p>
+              
+
+<h1 id="前端遇到的问题及解决方案">前端遇到的问题及解决方案:</h1>
 
 <ol>
 <li><p>页面多个音频 <code>audio</code> 只允许播放一个 js 解决方案: (<code>video</code> 同理)</p>
@@ -379,6 +377,120 @@ console.log(html)
 </code></pre>
 
 <hr />
+
+<ol>
+<li>JS 和 CSS 变量共享。关于 JS 和 Sass/Less 变量共享，<a href="https://www.zhihu.com/people/camsong">我们</a>摸索出了自己的解法：</li>
+</ol>
+
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/55357377">给2019前端的5个建议</a></p>
+</blockquote>
+
+<pre><code class="language-js">// src/styles/variables.js
+module.exports = {
+  // 主颜色
+  'primary-color': '#0C4CFF',
+  // 出错颜色
+  'error-color': '#F15533',
+  // 成功颜色
+  'success-color': '#35B34A',
+};
+</code></pre>
+
+<p>以下为 Webpack 配置，注入变量到 Scss</p>
+
+<pre><code class="language-ts">// webpack.config.js
+const styleVariables = require('src/styles/variables');
+
+// ...
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader?sourceMap&amp;minimize',
+          {
+            loader: 'sass-loader',
+            options: {
+              data: Object.keys(styleVariables)
+                .map(key =&gt; `\$${key}: ${styleVariables[key]};`)
+                .join('\n'),
+              sourceMap: true,
+              sourceMapContents: true
+            }
+          }
+        ]
+      }
+//...
+</code></pre>
+
+<p>在 scss 文件中，可以自己引用变量</p>
+
+<pre><code class="language-scss">// page.scss
+.button {
+  background: $primary-color;
+}
+</code></pre>
+
+<hr />
+
+<ol>
+<li><p>键盘事件(keyCode): 上下左右移动元素</p>
+
+<pre><code class="language-js">var oH3 = document.getElementById(&quot;h3&quot;);
+document.onkeydown = function(ev){
+var ev = ev || window.event;
+switch(ev.keyCode){
+case 37:
+case 100:
+  oH3.style.left =  oH3.offsetLeft - 10 + &quot;px&quot;;
+break;
+case 38:
+case 104:
+  oH3.style.top = oH3.offsetTop - 10 + &quot;px&quot;;
+break;
+case 39:
+case 102:
+  oH3.style.left = oH3.offsetLeft + 10 + &quot;px&quot;;
+break;
+case 40:
+case 98:
+  oH3.style.top = oH3.offsetTop + 10 + &quot;px&quot;;
+break;
+default:
+  console.log(&quot;请按上下左右键&quot;);
+break;
+}
+console.log(oH3.offsetTop+&quot;+&quot;+oH3.style.top);
+console.log(ev.keyCode);
+}
+</code></pre></li>
+</ol>
+
+<hr />
+
+<h2 id="css">CSS</h2>
+
+<hr />
+
+<ol>
+<li><p>修改滚动条默认样式</p>
+
+<pre><code class="language-scss">&amp;::-webkit-scrollbar {/*滚动条整体样式*/
+width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+height: 1px;
+}
+&amp;::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+background: @borderColor;
+}
+&amp;::-webkit-scrollbar-track {/*滚动条里面轨道*/
+-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+border-radius: 10px;
+background: transparent;
+}
+</code></pre></li>
+</ol>
 
               
             </div>
