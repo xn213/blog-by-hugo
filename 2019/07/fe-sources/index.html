@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="前端资源, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
 <meta name="description" content="前端技术日新月异，随着 大前端 的趋势，想要成为一名合格的前端工程师，需要学习掌握的东西更是宽泛。所以我们在寻求进阶的过程中，既要不断夯实前端基础，也要快速响应技术的更新迭代。闲话少说，这次给大家整理分享一些前端进阶的优质学习资源，希望对大家有所帮助！
@@ -573,27 +573,24 @@
 <li><p>摘要</p>
 
 <ul>
-<li><ol>
-<li><p>输出是什么？</p>
+<li>1.  输出是什么？</li>
+</ul>
 
 <pre><code class="language-js">function sayHi() {
-console.log(name)
-console.log(age)
-var name = 'Lydia'
-let age = 21
+  console.log(name)
+  console.log(age)
+  var name = 'Lydia'
+  let age = 21
 }
 
 sayHi()
-</code></pre></li>
-</ol></li>
+</code></pre>
 
-<li><p>A: <code>Lydia</code> 和 <code>undefined</code></p></li>
-
-<li><p>B: <code>Lydia</code> 和 <code>ReferenceError</code></p></li>
-
-<li><p>C: <code>ReferenceError</code> 和 <code>21</code></p></li>
-
-<li><p>D: <code>undefined</code> 和 <code>ReferenceError</code></p></li>
+<ul>
+<li>A: <code>Lydia</code> 和 <code>undefined</code></li>
+<li>B: <code>Lydia</code> 和 <code>ReferenceError</code></li>
+<li>C: <code>ReferenceError</code> 和 <code>21</code></li>
+<li>D: <code>undefined</code> 和 <code>ReferenceError</code></li>
 </ul>
 
 <p><details><summary><b>答案</b></summary>
@@ -607,24 +604,22 @@ sayHi()
 <hr />
 
 <ul>
-<li><ol>
-<li><p>输出是什么？</p>
+<li>1.  输出是什么？</li>
+</ul>
 
 <pre><code class="language-js">for (var i = 0; i &lt; 3; i++) {
-setTimeout(() =&gt; console.log(i), 1)
+  setTimeout(() =&gt; console.log(i), 1)
 }
 
 for (let i = 0; i &lt; 3; i++) {
-setTimeout(() =&gt; console.log(i), 1)
+  setTimeout(() =&gt; console.log(i), 1)
 }
-</code></pre></li>
-</ol></li>
+</code></pre>
 
-<li><p>A: <code>0 1 2</code> 和 <code>0 1 2</code></p></li>
-
-<li><p>B: <code>0 1 2</code> 和 <code>3 3 3</code></p></li>
-
-<li><p>C: <code>3 3 3</code> 和 <code>0 1 2</code></p></li>
+<ul>
+<li>A: <code>0 1 2</code> 和 <code>0 1 2</code></li>
+<li>B: <code>0 1 2</code> 和 <code>3 3 3</code></li>
+<li>C: <code>3 3 3</code> 和 <code>0 1 2</code></li>
 </ul>
 
 <p><details><summary><b>答案</b></summary>

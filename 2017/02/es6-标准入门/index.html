@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="ES6, 博客, 工具, hugo, vue, vuejs, nodejs, react, development">
 <meta name="description" content="一些 ES6 标准
@@ -349,83 +349,95 @@ bar // &quot;bb&quot;
 <p>用途：</p>
 
 <ul>
-<li><p>1.交换变量值</p>
+<li>1.交换变量值</li>
+</ul>
 
 <pre><code class="language-js">let x=1;
 let y=2;
 [x, y] = [y, x]
-</code></pre></li>
+</code></pre>
 
-<li><p>2.从函数返回多个值</p>
+<ul>
+<li>2.从函数返回多个值</li>
+</ul>
 
 <pre><code class="language-js">function example() {
-return [1,2,3]
+  return [1,2,3]
 }
 let [a,b,c] = example()
 function example() {
-return {
-foo: 1,
-bar: 2
-}
+  return {
+    foo: 1,
+    bar: 2
+  }
 }
 let {foo,bar} = example()
-</code></pre></li>
+</code></pre>
 
-<li><p>3.函数参数定义</p>
+<ul>
+<li>3.函数参数定义</li>
+</ul>
 
 <pre><code class="language-js">function f([x,y,z]) {...}
 f([1,2,3])
 function f({x,y,z}) {...}
 f({x:1, y:2, z:3})
-</code></pre></li>
+</code></pre>
 
-<li><p>4.提取 json 数据</p>
+<ul>
+<li>4.提取 json 数据</li>
+</ul>
 
 <pre><code class="language-js">let jsonData = {
-id: 42,
-status: &quot;OK&quot;,
-data: [867, 5309]
+  id: 42,
+  status: &quot;OK&quot;,
+  data: [867, 5309]
 };
 
 let { id, status, data: number } = jsonData;
 
 console.log(id, status, number);
 // 42, &quot;OK&quot;, [867, 5309]
-</code></pre></li>
+</code></pre>
 
-<li><p>5.参数默认值</p>
+<ul>
+<li>5.参数默认值</li>
+</ul>
 
 <pre><code class="language-js">jQuery.ajax = function (url, {
-async = true,
-beforeSend = function () {},
-cache = true,
-complete = function () {},
-crossDomain = false,
-global = true,
-// ... more config
+  async = true,
+  beforeSend = function () {},
+  cache = true,
+  complete = function () {},
+  crossDomain = false,
+  global = true,
+  // ... more config
 }) {
-// ... do stuff
+  // ... do stuff
 };
-</code></pre></li>
+</code></pre>
 
-<li><p>6.遍历 Map</p>
+<ul>
+<li>6.遍历 Map</li>
+</ul>
 
 <pre><code class="language-js">var map = new Map();
 map.set('first', 'hello');
 map.set('second', 'world');
 
 for (let [key, value] of map) {
-console.log(key + &quot; is &quot; + value);
+  console.log(key + &quot; is &quot; + value);
 }
 // first is hello
 // second is world”
-</code></pre></li>
+</code></pre>
 
-<li><p>7.输入模块的指定方法</p>
+<ul>
+<li>7.输入模块的指定方法</li>
+</ul>
 
 <pre><code class="language-js">const { SourceMapConsumer, SourceNode } = require(&quot;source-map&quot;);”
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h1 id="默认参数">默认参数</h1>
 

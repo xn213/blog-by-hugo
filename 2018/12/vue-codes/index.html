@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.57.0 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
 <meta name="author" content="xn213">
 <meta name="keywords" content="前端, 前端问题, 解决方案, vuejs, nodejs, node, blog, vue, vuejs, nodejs, react, development">
 <meta name="description" content=" 自定义指令: 权限指令 // v-allow 指令, 值与路由meta字段对比, 绑定的内容显示与否 Vue.directive(&#39;allow&#39;, { inserted: (el, binding, vnode) =&gt; { let permissionList = vnode.context.$route.meta.permission if(!permissionList.includes(binding.value)){ el.parentNode.removeChild(el) } } })  // 使用
