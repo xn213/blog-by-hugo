@@ -420,6 +420,11 @@
   </url>
   
   <url>
+    <loc>https://xn213.github.io/hugo-blog/1/01/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://xn213.github.io/hugo-blog/archives/</loc>
     <priority>0</priority>
   </url>
