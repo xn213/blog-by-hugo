@@ -158,6 +158,23 @@
   </url>
   
   <url>
+    <loc>https://xn213.github.io/hugo-blog/categories/git/</loc>
+    <lastmod>2019-07-01T21:13:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/tags/git/</loc>
+    <lastmod>2019-07-01T21:13:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xn213.github.io/hugo-blog/2019/07/%E5%B8%B8%E7%94%A8-git/</loc>
+    <lastmod>2019-07-01T21:13:21+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xn213.github.io/hugo-blog/categories/vue.js/</loc>
     <lastmod>2019-05-21T18:21:13+08:00</lastmod>
     <priority>0</priority>

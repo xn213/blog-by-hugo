@@ -75,6 +75,15 @@
     </item>
     
     <item>
+      <title>Git</title>
+      <link>https://xn213.github.io/hugo-blog/categories/git/</link>
+      <pubDate>Mon, 01 Jul 2019 21:13:21 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Vue.js</title>
       <link>https://xn213.github.io/hugo-blog/categories/vue.js/</link>
       <pubDate>Tue, 21 May 2019 18:21:13 +0800</pubDate>

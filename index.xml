@@ -101,6 +101,23 @@ debugger: 安装依赖 babel-preset-env
     </item>
     
     <item>
+      <title>常用 git </title>
+      <link>https://xn213.github.io/hugo-blog/2019/07/%E5%B8%B8%E7%94%A8-git/</link>
+      <pubDate>Mon, 01 Jul 2019 21:13:21 +0800</pubDate>
+      
+      <guid>https://xn213.github.io/hugo-blog/2019/07/%E5%B8%B8%E7%94%A8-git/</guid>
+      <description>git 常用  Cmder 集成工具, 可以使用别名
+ 命令:
+  git branch git checkout &amp;lt;branchname&amp;gt; git status git add . git commit -m &#39;gitmessage&#39; git push   生成公钥: ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot;
+ 配置账户:
+  git config --global user.name &amp;lt;username&amp;gt;
+git config --global user.email &amp;lt;useremail&amp;gt;
+ 远端:  查看远端仓库: git remote -v
+克隆修改文件夹名字: git clone &amp;lt;repo&amp;gt; &amp;lt;filename&amp;gt;,
+ filename 为本地文件夹名, 将内容克隆到这个文件夹 git clone git@github.com:xn213/blog.git public 远端为blog的项目克隆到 public 下  Problems:  问题：gitlab 配置了SSH key，但是每次提交的时候还是要输入用户名和密码</description>
+    </item>
+    
+    <item>
       <title>【Vue.js】21个值得一用的组件库</title>
       <link>https://xn213.github.io/hugo-blog/2019/05/vue.js21%E4%B8%AA%E5%80%BC%E5%BE%97%E4%B8%80%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93/</link>
       <pubDate>Tue, 21 May 2019 18:21:13 +0800</pubDate>
